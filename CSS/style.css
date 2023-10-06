@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+html { font-size: 16px;
+  line-height: normal;
+}
+
+
+body {
+  margin: 0px;
+  background-color: #161616;
+  max-width: inherit;
+  border-bottom-width: 1px;
+  overflow-y: auto;
+}
+
+
+main {
+  margin-left: 69px;
+  width: 100%;
+  height: 350px;
+  margin-top: 200px;
+}
+
+
+
+h1, h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 6px;
+    clear: both;
+    color: white;
+  }
+
+h3 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+h4 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+p {
+  color: white;
+  font-size: medium;
+}
+
+
+
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #A10000;
+  height: 91px;
+}
+
+div.polaroid {
+  float: left;
+  text-align: center;
+  background-color:#A10000;
+  margin-left: 69px;
+  margin-top: 0.5%;
+}
+
+nav.topnav a {
+  height: 91;
+  float: left;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  padding: 34.5px 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  float: left; 
+  list-style-type: none; 
+  text-align: center;
+  display: block; 
+  padding-left: 10;
+  padding-top: 0;
+  margin-top: 0;
+  text-align: center; 
+}
+
+nav li {
+  float: left; 
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none; 
+  width: 100px; 
+  display: inline;
+  color: white; 
+  padding: 0px 0px; 
+  text-align: center; 
+}
+
+nav li:last-child {
+  margin-right: o; 
+  margin-top: 0;
+}
+
+nav li a.active {
+  box-sizing: border-box;
+  background-color: indigo;
+  text-align: center;
+  color: white;
+  width: 110px;
+  height: 91px;
+  border-radius: 0%;
+  margin-top: 0;
+}
+
+nav li a.special {
+  float: right;
+  margin-top: 0;
+}
+
+nav li a:hover {
+  background-color: #790000; 
+  color: white; 
+  width: 110px;
+  height: 91;
+}
+
+
+
+footer.navigation-footer {
+  position: sticky;
+  margin-top: 10%;
+  line-height: normal;
+  text-decoration: none;
+  background-color: black;
+  display: flex;
+  margin-bottom: 0px;
+}
+
+footer li a {
+  color: white;
+  box-sizing: border-box;
+}
+
+div.AU ul li.foot-title {
+  background-color: #A10000;
+  color: #CCA4FF;
+  opacity: 100%;
+  border: none;
+  outline: none;
+  width: 21%;
+}
+
+div.AU {
+  width: 50%;
+  color: white;
+  opacity: 100%;
+  padding: 5px 5px 50px 69px;
+  text-align: left;
+  font-size: large;
+  flex-direction: column;
+  border: none;
+  background-color: blueviolet;
+}
+
+div.CU ul li.foot-title {
+  background-color: #A10000;
+  color: #CCA4FF;
+  opacity: 100%;
+  width: 25%;
+}
+
+div.CU {
+  width: 50%;
+  padding: 5px 5px 50px 69px;
+  color: white;
+  opacity: 100%;
+  list-style-type: none;
+  text-align: left;
+  font-size: large;
+  border: none;
+  background-color: aqua;
+}
+
