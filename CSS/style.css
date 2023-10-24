@@ -24,6 +24,10 @@ body {
 
 .AU-M {
   padding-top: 150px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .CU-M {
@@ -474,6 +478,10 @@ a {
   text-align: center;
 }
 
+.AButtons ul {
+  list-style-type: none;
+}
+
 .ButtonsAM a{
   margin-left: 7px;
 }
@@ -502,6 +510,10 @@ a {
   margin-right: 69px;
   flex-wrap: nowrap;
   align-items: center;
+}
+
+.CButtons ul {
+  list-style-type: none;
 }
 
 .ButtonsCT a{
@@ -917,18 +929,32 @@ a {
 
 //Page 2//
 
+.AM-M-FrontPoster{
+  height: 750px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
 
 .Hogwarts {
-  float: right;
-  margin-right: 0;
+  margin: 0;
   padding: 0;
+  float:right;
   position: relative;
 
   -webkit-mask-image: linear-gradient(black, black, transparent);
 }
 
 .Hogwarts img {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  height: 750px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px;
+  justify-content: right;
 }
 
 .AMMPosterText {
@@ -1045,7 +1071,37 @@ a {
   opacity: 100%;
 }
 
+@media (max-width: 1000px) {
+  .Hogwarts img {
+    height: 500px;
+  }
 
+  .AMMPosterText {
+    flex-wrap: nowrap;
+    word-wrap: break-word;
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .AMMPosterText h2{
+    font-size: 26px;
+  }
+
+  .AMMPosterText p {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+  }
+
+  .PlayButton {
+    margin-top: 30px;
+  }
+
+  .PlayButton a {
+    font-size: 20px;
+  }
+}
 
 
 
