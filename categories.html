@@ -5,7 +5,7 @@
   <link rel="icon" type="image/x-icon" href="images/favicon">
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="categories" content="width=device-width, initial-scale=1.0">
 
   <title>Square Eyes</title>
 
@@ -14,86 +14,206 @@
  <script src="https://kit.fontawesome.com/2ef99fbf3a.js" crossorigin="anonymous"></script>
 
  <link rel="shortcut icon" href="./images/glasses_.png">
-
 </head>
 
 <body>
-<header>
-  <nav class="topnav">
 
-    <div class="polaroid">
-          <img src="./images/squareeyesheaderlogo.png" alt="" width="161" height="69" alt="">
+  <header class="header">
+    <a href="" class="logo">
+      <img src="images/squareeyesheaderlogo.png" alt="">
+    </a>
+    
+    <input type="checkbox" id="check">
+    <label for="check" class="menu-icon">
+      <i class="fa-solid fa-bars" style="color: #ffffff;" id="hamburger"></i>
+      <i class="fa-solid fa-xmark" style="color: #ffffff;" id="closeburger"></i>
+    </label>
+
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html" >Home</a>
+        </li>
+          <li>
+            <a href="all-movies.html">Movies</a>
+          </li>
+          <li>
+            <a href="categories.html" class="active">Categories</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="C-M">
+
+  <div class="C-M-FrontPoster" style="width: 100%;">
+    <figure class="woods">
+      <img src="images/lostinwoods.png" alt="" height="700px">
+    </figure>
+    <div class="CMPosterText">
+      <h2>Into the Woods</h2>
+      <div class="CMTop">
+        <div class="CMRating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          Rating 4/5
+        </div>
+        <div class="CMCatTag">
+          Film <span style="color: #BC0000;">•</span> 2014 <span style="color: #BC0000;">•</span> 2h 5m
+        </div>
+      </div>
+        <div class="CMPosterTags">
+          <a class="CMTag1" href="categories.html">Drama</a>
+          <a class="CMTag2" href="categories.html">Comedy</a>
+          <a class="CMTag3" href="categories.html">Adventure</a>
+        </div>
+        <p>A witch tasks a childless baker and his wife with procuring magical items from classic fairy tales to reverse the curse put on their...</p>
+        <div class="PlayButton">
+          <a href="all-movies.html">Play Now
+            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+          </a>
+        </div>
+      </div>
+  </div>
+
+  <div class="CM-Title-Content">
+    <h1 class="CM-h">Categories</h1>
+    <div class="CM-ButtonBack">
+      <form class="CMGoBack">
+        <div class="CMGoBackButton">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+          <input type="Button" value="Go Back" onclick="history.back(-1)">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="CM-Posters-Sec1">
+    <div class="CMPosterCat1">
+      <a href="all-movies.html">
+        <img src="images/posters/Twilight.jpg" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Romance</div>
       </a>
     </div>
 
-    <ul>
-     <li>
-       <a href="index.html">Home</a>
-     </li>
-     <li>
-      <a href="all-movies.html">All Movies</a>
-     </li>
-     <li>
-      <a href="categories.html" class="active">Categories</a>
-    </li>
-     <li class="special">
-       <a href="about.html" >About</a>
-      
-     </li>
-     <li>
-       <a href="contact.html">Contact</a>
-     </li>
-     </ul>
-  </nav>
-</header>
-  
-<main>
-<h1>My Coding World</h1>
+    <div class="CMPosterCat2">
+      <a href="all-movies.html">
+        <img src="images/posters/Batman.png" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Action</div>
+      </a>
+    </div>
 
-<p>This is just a practise website.</p>
-<p>Dont worry about me, I will just be crying in the corner.</p>
+    <div class="CMPosterCat3">
+      <a href="all-movies.html">
+        <img src="images/posters/What We Do in the shadows.jpg" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Comedy</div>
+      </a>
+    </div>
+
+    <div class="CMPosterCat4">
+      <a href="all-movies.html">
+        <img src="images/posters/The Hobbit.jpg" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Fantasy</div>
+      </a>
+    </div>
+
+    <div class="CMPosterCat5">
+      <a href="all-movies.html">
+        <img src="images/posters/Toy Story.png" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Family</div>
+      </a>
+    </div>
+
+
+  </div>
+
+  <div class="CM-Posters-Sec2">
+
+    <div class="CMPosterCat1">
+      <a href="all-movies.html">
+        <img src="images/posters/Addams.png" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Animation</div>
+      </a>
+    </div>
+
+    <div class="CMPosterCat2">
+      <a href="all-movies.html">
+        <img src="images/posters/Scream.png" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Horror</div>
+      </a>
+    </div>
+
+    <div class="CMPosterCat3">
+      <a href="all-movies.html">
+        <img src="images/posters/Hobbs & Shaw.png" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Buddy - Cop</div>
+      </a>
+    </div>
+
+    <div class="CMPosterCat4">
+      <a href="all-movies.html">
+        <img src="images/posters/Godzilla.png" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Thriller</div>
+      </a>
+    </div>
+
+    <div class="CMPosterCat5">
+      <a href="all-movies.html">
+        <img src="images/posters/Sweetheart.png" alt="" width="246.85px" height="380.08px">
+        <div class="CMCat">Science - Fiction</div>
+      </a>
+    </div>
+
+
+  </div>
 
 </main>
 
-<footer class="navigation-footer">
+<a href="#" class="topbutton">
+  <img src="images/arrow.svg" alt="" width="30px" height="30px">
+</a>
 
-  <div class="AU">
-  <ul>
-    <li class="foot-title">
-      <a href="about.html"><h4>About Us</h4></a>
-    </li>
-    <li> 
-      <a href="about.html">Our Cause</a>
-    </li>
-    <li>
-      <a href="about.html">Background</a>
-    </li>
-    <li>
-      <a href="about.html">Our Investors</a>
-    </li>
-    <li>
-      <a href="about.html">Our Workers</a>
-    </li>
-  </ul>
-  </div>
-
-  <div class="CU">
-    <ul>
-      <li class="foot-title">
-        <a href="contact.html"><h4>Contact Us</h4></a>
-      </li>
-      <li>
-        <a href="contact.html">Location</a>
-      </li>
-      <li>
-        <a href="contact.html">Phone Number</a>
-      </li>
-      <li>
-        <a href="contact.html">Email Adress</a>
-      </li>
-    </ul>
-  </div>
-  
+<footer>
+  <nav class="flex-container-footer">
+    <div class="flex-container-AU">
+      <div>
+        <div class="footer-link-title">
+          <a href="about.html">About us</a>
+        </div>
+        <div class="footer-link-paragraph"> 
+          <a href="about.html" class="footer-p">Our Cause</a>
+        </div>
+        <div class="footer-link-paragraph">
+          <a href="about.html" class="footer-p">Background</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-container-CU">
+      <div>
+        <div class="footer-link-title">
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-link-paragraph">
+          <a href="contact.html" class="footer-p">Location</a>
+        </div>
+        <div class="footer-link-paragraph">
+          <a href="contact.html" class="footer-p">Phone Number</a>
+        </div>
+        <div class="footer-link-paragraph">
+          <a href="contact.html" class="footer-p">Email Adress</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </footer>
 
 </body>

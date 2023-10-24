@@ -5,7 +5,7 @@
   <link rel="icon" type="image/x-icon" href="images/favicon">
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="all movies" content="width=device-width, initial-scale=1.0">
 
   <title>Square Eyes</title>
 
@@ -18,83 +18,333 @@
 </head>
 
 <body>
-<header>
-  <nav class="topnav">
+  <header class="header">
+    <a href="" class="logo">
+      <img src="images/squareeyesheaderlogo.png" alt="">
+    </a>
+    
+    <input type="checkbox" id="check">
+    <label for="check" class="menu-icon">
+      <i class="fa-solid fa-bars" style="color: #ffffff;" id="hamburger"></i>
+      <i class="fa-solid fa-xmark" style="color: #ffffff;" id="closeburger"></i>
+    </label>
 
-    <div class="polaroid">
-          <img src="./images/squareeyesheaderlogo.png" alt="" width="161" height="69" alt="">
-      </a>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html" >Home</a>
+        </li>
+          <li>
+            <a href="all-movies.html" class="active">Movies</a>
+          </li>
+          <li>
+            <a href="categories.html">Categories</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+      </ul>
+    </nav>
+  </header>
+  
+<main class="AM-M">
+
+
+  <div class="AM-M-FrontPoster" style="width: 100%;">
+    <figure class="Hogwarts">
+      <img src="images/castle2.png" alt="" height="700px">
+    </figure>
+    <div class="AMMPosterText">
+      <h2>Harry Potter and the Philosopher's Stone</h2>
+      <div class="AMMTop">
+        <div class="AMMRating">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          Rating 5/5
+        </div>
+        <div class="AMMCat">
+          Film <span style="color: #BC0000;">•</span> 2001 <span style="color: #BC0000;">•</span> 2h 32m
+        </div>
+      </div>
+        <div class="AMMPosterTags">
+          <a class="AMMTag1" href="categories.html">Fantasy</a>
+          <a class="AMMTag2" href="categories.html">Family</a>
+          <a class="AMMTag3" href="categories.html">Adventure</a>
+        </div>
+        <p>An 11-year-old orphan living with his unwelcoming aunt, uncle, and cousin, who learns of his own fame as a wizard known to have survived his parents' murder at the hands of the dark wizard Lord Voldemort...</p>
+        <div class="PlayButton">
+          <a href="all-movies.html">Play Now
+            <i class="fa-regular fa-circle-play" style="color: #ffffff;"></i>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <ul>
-     <li>
-       <a href="index.html">Home</a>
-     </li>
-     <li>
-      <a href="all-movies.html" class="active">All Movies</a>
-     </li>
-     <li>
-      <a href="categories.html">Categories</a>
-    </li>
-     <li class="special">
-       <a href="about.html" >About</a>
-      
-     </li>
-     <li>
-       <a href="contact.html">Contact</a>
-     </li>
-     </ul>
-  </nav>
-</header>
-  
-<main>
-<h1>My Coding World</h1>
 
-<p>This is just a practise website.</p>
-<p>Dont worry about me, I will just be crying in the corner.</p>
+<div class="AM-M-Content">
+
+  <div class="AM-M-Title-Content">
+    <h1 class="AM-M-h">All Movies</h1>
+    <div class="AM-ButtonBack">
+      <form class="AMGoBack">
+        <div class="AMGoBackButton">
+          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+          <input type="Button" value="Go Back" onclick="history.back(-1)">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="AM-Posters-Sec1">
+    <figure class="AMPoster1">
+      <a href="all-movies.html">
+        <img src="images/posters/Twilight.jpg" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Twilight</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Romance</a>
+        <a href="">Fantasy</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster2">
+      <a href="all-movies.html">
+        <img src="images/posters/Godzilla.png" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Godzilla - King of the Monsters</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Action</a>
+        <a href="">Science-Fiction</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster3">
+      <a href="all-movies.html">
+        <img src="images/posters/Toy Story.png" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Toy Story 4</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Adventure</a>
+        <a href="">Family</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster4">
+      <a href="all-movies.html">
+        <img src="images/posters/The Hobbit.jpg" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">The Hobbit - The Desolation of Smaug</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Adventure</a>
+        <a href="">Fantasy</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster5">
+      <a href="moviepage.html">
+        <img src="images/posters/What We Do in the shadows.jpg" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">What We Do in the Shadows</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Horror</a>
+        <a href="">Comedy</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster6">
+      <a href="all-movies.html">
+        <img src="images/posters/Batman.png" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Batman</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Drama</a>
+        <a href="">Action</a>
+      </div>
+    </figure>
+  </div>
+  
+  <div class="AM-Posters-Sec2">
+    <figure class="AMPoster1">
+      <a href="all-movies.html">
+        <img src="images/posters/Hollywood.png" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Once Upon a Time in Hollywood</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Comedy</a>
+        <a href="">Drama</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster2">
+      <a href="all-movies.html">
+        <img src="images/posters/Sweetheart.png" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Sweetheart</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Horror</a>
+        <a href="">Science-Fiction</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster3">
+      <a href="all-movies.html">
+        <img src="images/posters/Twilight.jpg" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Twilight</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Romance</a>
+        <a href="">Fantasy</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster4">
+      <a href="all-movies.html">
+        <img src="images/posters/Toy Story.png" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Toy Story 4</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Adventure</a>
+        <a href="">Family</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster5">
+      <a href="all-movies.html">
+        <img src="images/posters/The Hobbit.jpg" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">The Hobbit - The Desolation of Smaug</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Adventure</a>
+        <a href="">Fantasy</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster6">
+      <a href="all-movies.html">
+        <img src="images/posters/What We Do in the shadows.jpg" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">What We Do in the Shadows</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Horror</a>
+        <a href="">Comedy</a>
+      </div>
+    </figure>
+  </div>
+  
+  <div class="AM-Posters-Sec3">
+    <figure class="AMPoster1">
+      <a href="all-movies.html">
+        <img src="images/posters/Twilight.jpg" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Twilight</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Romance</a>
+        <a href="">Fantasy</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster2">
+      <a href="all-movies.html">
+        <img src="images/posters/Godzilla.png" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Godzilla - King of the Monsters</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Action</a>
+        <a href="">Science-Fiction</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster3">
+      <a href="all-movies.html">
+        <img src="images/posters/Toy Story.png" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Toy Story 4</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Adventure</a>
+        <a href="">Family</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster4">
+      <a href="all-movies.html">
+        <img src="images/posters/The Hobbit.jpg" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">The Hobbit - The Desolation of Smaug</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Adventure</a>
+        <a href="">Fantasy</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster5">
+      <a href="all-movies.html">
+        <img src="images/posters/What We Do in the shadows.jpg" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">What We Do in the Shadows</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Horror</a>
+        <a href="">Comedy</a>
+      </div>
+    </figure>
+
+    <figure class="AMPoster6">
+      <a href="all-movies.html">
+        <img src="images/posters/Batman.png" alt="" width="190px" height="275px">
+      </a>
+      <figcaption class="PosterTitle">Batman</figcaption>
+      <div class="AM-poster-tags">
+        <a href="">Drama</a>
+        <a href="">Action</a>
+      </div>
+    </figure>
+  </div>
+
+
 
 </main>
 
-<footer class="navigation-footer">
+<a href="#" class="topbutton">
+  <img src="images/arrow.svg" alt="" width="30px" height="30px">
+</a>
 
-  <div class="AU">
-  <ul>
-    <li class="foot-title">
-      <a href="about.html"><h4>About Us</h4></a>
-    </li>
-    <li> 
-      <a href="about.html">Our Cause</a>
-    </li>
-    <li>
-      <a href="about.html">Background</a>
-    </li>
-    <li>
-      <a href="about.html">Our Investors</a>
-    </li>
-    <li>
-      <a href="about.html">Our Workers</a>
-    </li>
-  </ul>
+<nav class="flex-container-footer">
+  <div class="flex-container-AU">
+    <div>
+      <div class="footer-link-title">
+        <a href="about.html">About us</a>
+      </div>
+      <div class="footer-link-paragraph"> 
+        <a href="about.html" class="footer-p">Our Cause</a>
+      </div>
+      <div class="footer-link-paragraph">
+        <a href="about.html" class="footer-p">Background</a>
+      </div>
+    </div>
   </div>
-
-  <div class="CU">
-    <ul>
-      <li class="foot-title">
-        <a href="contact.html"><h4>Contact Us</h4></a>
-      </li>
-      <li>
-        <a href="contact.html">Location</a>
-      </li>
-      <li>
-        <a href="contact.html">Phone Number</a>
-      </li>
-      <li>
-        <a href="contact.html">Email Adress</a>
-      </li>
-    </ul>
+  <div class="flex-container-CU">
+    <div>
+      <div class="footer-link-title">
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-link-paragraph">
+        <a href="contact.html" class="footer-p">Location</a>
+      </div>
+      <div class="footer-link-paragraph">
+        <a href="contact.html" class="footer-p">Phone Number</a>
+      </div>
+      <div class="footer-link-paragraph">
+        <a href="contact.html" class="footer-p">Email Adress</a>
+      </div>
+    </div>
   </div>
-
-</footer>
+</nav>
 
 
 </body>

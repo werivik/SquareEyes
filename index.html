@@ -5,7 +5,8 @@
   <link rel="icon" type="image/x-icon" href="images/favicon">
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="homepage" content="width=device-width, initial-scale=1.0">
+  <meta author="Weronika Vik">
 
   <title>Square Eyes</title>
 
@@ -14,87 +15,468 @@
  <script src="https://kit.fontawesome.com/2ef99fbf3a.js" crossorigin="anonymous"></script>
 
  <link rel="shortcut icon" href="./images/glasses_.png">
-
 </head>
 
 <body>
-<header>
-  <nav class="topnav">
 
-    <div class="polaroid">
-          <img src="./images/squareeyesheaderlogo.png" alt="" width="161" height="69" alt="">
+  <header class="header">
+    <a href="" class="logo">
+      <img src="images/squareeyesheaderlogo.png" alt="">
+    </a>
+    
+    <input type="checkbox" id="check">
+    <label for="check" class="menu-icon">
+      <i class="fa-solid fa-bars" style="color: #ffffff;" id="hamburger"></i>
+      <i class="fa-solid fa-xmark" style="color: #ffffff;" id="closeburger"></i>
+    </label>
+
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html" class="active">Home</a>
+        </li>
+          <li>
+            <a href="all-movies.html">Movies</a>
+          </li>
+          <li>
+            <a href="categories.html">Categories</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+      </ul>
+      <div class="searchbar">
+        <form>
+          <input type="search" name="box" placeholder="Search...">        </form>
+      </div>
+    </nav>
+  </header>
+
+
+<main class="home-body">
+
+  <div class="flex-container-poster">
+    <img src="images/John Wick2.jpg" class="FrontPoster" alt="John Wick Action Picture">
+  </div>
+
+  <li class="navbuttons">
+    <a href="index.html" class="homepage-button">Home</a>
+    <a href="all-movies.html">Movies</a>
+    <a href="categories.html">Categories</a>
+  </li>
+
+
+  <div class="AButtons">
+    <a href="all-movies.html" class="PM">Popular Movies</a>
+    <li class="ButtonsAM"> 
+      <a href="" class="ButtonAMarrow">
+        <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+        </a>
+      <a href="" class="ButtonAMarrow">
+        <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
       </a>
+      <a href="all-movies.html" class="ButtonAM1">All</a>
+    </li>
+  </div>
+
+  <marquee behavior="scroll" direction="right" scrollamount="0">
+
+    <div class="all-movies">
+
+      <div class="Poster1">
+        <a href="all-movies.html">
+          <img src="images/posters/Addams.png" alt="Addams">
+        </a>
+        <div class="poster-text-block">
+          <div class="scroll-text">
+            <span>
+              <a href="">The Addams Family - Halloween</a>
+            </span>
+          </div>
+          <div class="poster-tags">
+            <a href="categories.html" >Animation</a>
+            <a href="categories.html" >Comedy</a>
+            <a href="categories.html" >Family</a>
+          </div>
+        </div>
+      </div>
+
+        <div class="Poster2">
+          <a href="all-movies.html">
+            <img src="images/posters/Batman.png" alt="Batman">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+              <span>
+                <a href="">Batman</a>
+              </span>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Action</a>
+              <a href="categories.html" >Drama</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Poster3">
+          <a href="all-movies.html">
+            <img src="images/posters/Godzilla.png" alt="Godzilla">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+                <a href="">Godzilla</a>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Action</a>
+              <a href="categories.html" >Science-Fiction</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Poster4">
+          <a href="all-movies.html">
+            <img src="images/posters/Hobbs & Shaw.png" alt="Hobbs & Shaw">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+              <span>
+                <a href="">Hobbs & Shaw</a>
+              </span>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Action</a>
+              <a href="categories.html" >Buddy-Cop</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Poster5">
+          <a href="all-movies.html">
+            <img src="images/posters/Hollywood.png" alt="Once uppon a Time in Hollywood">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+              <span>
+                <a href="">Once Upon a Time in Hollywood</a>
+              </span>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Comedy</a>
+              <a href="categories.html" >Drama</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Poster6">
+          <a href="all-movies.html">
+            <img src="images/posters/Scream.png" alt="Scream">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+              <span>
+                <a href="">Scream</a>
+              </span>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Horror</a>
+              <a href="categories.html" >Thriller</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Poster7">
+          <a href="all-movies.html">
+            <img src="images/posters/Sweetheart.png" alt="Sweetheart">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+              <span>
+                <a href="">Sweetheart</a>
+              </span>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Horror</a>
+              <a href="categories.html" >Science-Fiction</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Poster8">
+          <a href="all-movies.html">
+            <img src="images/posters/The Hobbit.jpg" alt="Hobbit">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+              <span>
+                <a href="">The Hobbit - The Desolation of Smaug</a>
+              </span>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Adventure</a>
+              <a href="categories.html" >Fantasy</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Poster9">
+          <a href="all-movies.html">
+            <img src="images/posters/Toy Story.png" alt="Toy Story 4">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+              <span>
+                <a href="">Toy Story 4</a>
+              </span>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Animation</a>
+              <a href="categories.html" >Adventure</a>
+              <a href="categories.html" >Family</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Poster10">
+          <a href="all-movies.html">
+            <img src="images/posters/Twilight.jpg" alt="Twilight">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+              <span>
+                <a href="">Twilight</a>
+              </span>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Romance</a>
+              <a href="categories.html" >Drama</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Poster11">
+          <a href="all-movies.html">
+            <img src="images/posters/What We Do in the shadows.jpg" alt="What We Do in the Shadows">
+          </a>
+          <div class="poster-text-block">
+            <div class="scroll-text">
+              <span>
+                <a href="">What We Do in the Shadows</a>
+              </span>
+            </div>
+            <div class="poster-tags">
+              <a href="categories.html" >Comedy</a>
+              <a href="categories.html" >Horror</a>
+            </div>
+          </div>
+        </div>
+
+     </div>
+
+
+  </marquee>
+
+  <div class="CButtons">
+    <a href="categories.html" class="TC" >Trendy Categories</a>
+    <li class="ButtonsCT">
+      <a href="categories.html" class="ButtonC1">All</a>
+    </li>
+  </div>
+
+  <marquee behavior="" direction="" scrollamount="0">
+
+    <div class="Categories">
+
+      <div class="CategoriesPosters">
+        <div class="PosterCat">
+          <a href="all-movies.html">
+            <img src="images/posters/Twilight.jpg" alt="">
+            <div class="CatTag">Romance</div>
+          </a>
+        </div>
+
+        <div class="CategoriesPosters">
+          <div class="PosterCat">
+            <a href="all-movies.html">
+              <img src="images/posters/Batman.png" alt="">
+              <div class="CatTag">Action</div>
+            </a>
+          </div>
+
+          <div class="CategoriesPosters">
+            <div class="PosterCat">
+              <a href="all-movies.html">
+                <img src="images/posters/Scream.png" alt="">
+                <div class="CatTag">Horror</div>
+              </a>
+            </div>
+
+            <div class="CategoriesPosters">
+              <div class="PosterCat">
+                <a href="all-movies.html">
+                  <img src="images/posters/Sweetheart.png" alt="">
+                  <div class="CatTag">Science - Fiction</div>
+                </a>
+              </div>
+
+              <div class="CategoriesPosters">
+                <div class="PosterCat">
+                  <a href="all-movies.html">
+                    <img src="images/posters/The Hobbit.jpg" alt="">
+                    <div class="CatTag">Fantasy</div>
+                  </a>
+                </div>
+    
+        <!--
+
+      <div class="Cat">
+        <a href="categories.html">
+          <img src="images/posters/Batman.png" alt="Batman" width="246.85" height="380.08">
+        </a>
+      </div>
+      
+      <div class="Cat">
+        <a href="categories.html">
+          <img src="images/posters/Godzilla.png" alt="Godzilla" width="246.85" height="380.08">
+        </a>
+      </div>
+    
+      <div class="Cat">
+        <a href="categories.html">
+          <img src="images/posters/Hobbs & Shaw.png" alt="Hobbs" width="246.85" height="380.08">
+        </a>
+      </div>
+    
+      <div class="Cat">
+        <a href="categories.html">
+          <img src="images/posters/Hollywood.png" alt="Hollywood" width="246.85" height="380.08">
+        </a>
+      </div>
+    
+      <div class="Cat">
+        <a href="categories.html">
+          <img src="images/posters/Scream.png" alt="Scream" width="246.85" height="380.08">
+        </a>
+      </div>
+    
+      <div class="Cat">
+        <a href="categories.html">
+          <img src="images/posters/Sweetheart.png" alt="Sweetheart" width="246.85" height="380.08">
+        </a>
+a      </div>
+    
+      <div class="Cat">
+        <a href="categories.html">
+          <img src="images/posters/Toy Story.png" alt="Toy" width="246.85" height="380.08">
+        </a>
+      </div>
     </div>
 
-    <ul>
-     <li>
-       <a href="index.html" class="active">Home</a>
-     </li>
-     <li>
-      <a href="all-movies.html">All Movies</a>
-     </li>
-     <li>
-      <a href="categories.html">Categories</a>
-    </li>
-     <li class="special">
-       <a href="about.html" >About</a>
-      
-     </li>
-     <li>
-       <a href="contact.html">Contact</a>
-     </li>
-     </ul>
-  </nav>
-</header>
+    -->
+  </marquee>
   
-<main>
-<h1>My Coding World</h1>
+<div class="plans-header">
+  <h2 class="plans-title"> 
+    <span style="color: #BC0000;">S</span>elect your Plan
+  </h2>
+  
+  <img src="images/ticket.png" alt="" width="150px" class="ticket">
+  
+  <p>No hidden fees, equipment rentals, or any needed installations. </p>
+  <p> Switch plans or cancel anytime.</p>
+</div>
 
-<p>This is just a practise website.</p>
-<p>Dont worry about me, I will just be crying in the corner.</p>
+  <div class="flex-plans">
+
+    <div class="plan1">
+      <p class="topp">Regular</p>
+      <a href="" class="Cost">Free</a>
+      <div>
+        <p>Browse Unlimitedly</p>
+        <p>HD Quality</p>
+        <p>40+ Languages</p>
+        <p>Buy/Rent Movies anytime</p>
+      </div>
+      <div class="ButtonPlans">
+        <a href="" class="GSButton">Get Started</a>
+      </div>
+    </div>
+
+    <div class="plan2">
+      <p class="topp">Comfort</p>
+      <a href="" class="Cost">nok 64.00 kr</a>
+      <div>
+        <p>Browse Unlimitedly</p>
+        <p>HD Quality</p>
+        <p>40+ Languages</p>
+        <p>Unlimited Movies and Series while on a Subscription</p>
+      </div>
+      <div class="ButtonPlans2">
+        <a href="" class="GSButtonC">Get Started</a>
+      </div>
+    </div> 
+
+    <div class="plan2">
+      <p class="topp">Movie Freak</p>
+      <a href="" class="Cost">nok 88.00 kr</a>
+      <div>
+        <p>Browse Unlimitedly</p>
+        <p>HD Quality</p>
+        <p>40+ Languages</p>
+        <p>Unlimited Movies and Series while on a Subscription</p>
+        <p>Pre-Release Content</p>
+        <p>Up to 5 Screens watching simultaneously</p>
+        <p>Up to 5 Profiles</p>
+        <p>Offline Mode</p>
+      </div>
+      <div class="ButtonPlans3">
+        <a href="" class="GSButtonMF">Get Started</a>
+      </div>
+    </div> 
+
+   </div>
+
 
 </main>
 
-<footer class="navigation-footer">
+<a href="#" class="topbutton">
+  <img src="images/arrow.svg" alt="">
+</a>
 
-  <div class="AU">
-  <ul>
-    <li class="foot-title">
-      <a href="about.html"><h4>About Us</h4></a>
-    </li>
-    <li> 
-      <a href="about.html">Our Cause</a>
-    </li>
-    <li>
-      <a href="about.html">Background</a>
-    </li>
-    <li>
-      <a href="about.html">Our Investors</a>
-    </li>
-    <li>
-      <a href="about.html">Our Workers</a>
-    </li>
-  </ul>
-  </div>
-
-  <div class="CU">
-    <ul>
-      <li class="foot-title">
-        <a href="contact.html"><h4>Contact Us</h4></a>
-      </li>
-      <li>
-        <a href="contact.html">Location</a>
-      </li>
-      <li>
-        <a href="contact.html">Phone Number</a>
-      </li>
-      <li>
-        <a href="contact.html">Email Adress</a>
-      </li>
-    </ul>
-  </div>
-
-
+<footer>
+  <nav class="flex-container-footer">
+    <div class="flex-container-AU">
+      <div>
+        <div class="footer-link-title">
+          <a href="about.html">About us</a>
+        </div>
+        <div class="footer-link-paragraph"> 
+          <a href="about.html" class="footer-p">Our Cause</a>
+        </div>
+        <div class="footer-link-paragraph">
+          <a href="about.html" class="footer-p">Background</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex-container-CU">
+      <div>
+        <div class="footer-link-title">
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-link-paragraph">
+          <a href="contact.html" class="footer-p">Location</a>
+        </div>
+        <div class="footer-link-paragraph">
+          <a href="contact.html" class="footer-p">Phone Number</a>
+        </div>
+        <div class="footer-link-paragraph">
+          <a href="contact.html" class="footer-p">Email Adress</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </footer>
 
 </body>

@@ -19,24 +19,20 @@
 
 <body>
 
-  <header class="header">
-    <a href="" class="logo">
-      <img src="images/squareeyesheaderlogo.png" alt="">
-    </a>
-    
-    <input type="checkbox" id="check">
-    <label for="check" class="menu-icon">
-      <i class="fa-solid fa-bars" style="color: #ffffff;" id="hamburger"></i>
-      <i class="fa-solid fa-xmark" style="color: #ffffff;" id="closeburger"></i>
-    </label>
-
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="index.html" >Home</a>
-        </li>
+  <header>
+    <div class="top-nav">
+      <div class="top-logo">
+        <a href="index.html" class="logo">
+          <img src="images/squareeyesheaderlogo.png" alt="" height="69px">
+        </a>
+      </div>
+      <nav class="links">
+        <ul>
           <li>
-            <a href="all-movies.html">Movies</a>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="all-movies.html" >All Movies</a>
           </li>
           <li>
             <a href="categories.html">Categories</a>
@@ -45,22 +41,23 @@
             <a href="about.html">About</a>
           </li>
           <li>
-            <a href="contact.html" class="active">Contact</a>
+            <a href="contact.html" >Contact</a>
           </li>
-      </ul>
-    </nav>
+          <div class="container"> 
+            <form action="all-movies.html" method="get" class="search-bar">
+              <input class="searchbar" type="Search" placeholder="Search..." name="q">
+              <button type="submit">
+                <img src="images/magnifying-glass-solid-white.svg" style="height: 20px; width: 20;">
+              </button>
+            </form>
+          </div>
+        </ul>
+      </nav>
+    </div>
   </header>
   
-<main class="CU-M">
+<main class="Cart-M">
 
-    <h1 class="CUPH">Contact Us</h1>
-    <p class="CUP">If you need help or have any new ideas or suggestion for us, do not fear to contact us! Here are some ways you can reach us.</p>
-    <h2 class="CUPH">Location</h2>
-    <p class="CUP">221B Baker Street, London</p>
-    <h2 class="CUPH">Phone Number</h2>
-    <p class="CUP">369-555-0123</p>
-    <h2 class="CUPH">Email Adress</h2>
-    <p class="CUP">squareeyes@gmail.com</p>
 
 </main>
 
