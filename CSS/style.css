@@ -193,7 +193,7 @@ a {
   gap: 40px;
 }
 
-.navbar2 span {
+.navbar2 div {
   display: inline-flex;
   flex-direction: column;
 }
