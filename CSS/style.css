@@ -6,7 +6,6 @@ html { font-size: 16px;
   width: 100%;
 }
 
-
 body {
   margin: 0px;
   padding: 0px;
@@ -181,36 +180,41 @@ a {
   overflow: hidden;
   width: 100%;
   flex-wrap: nowrap;
+  margin-left: 0px;
+  height: 100%;
 }
 
 .navbar2 ul {
   display: grid;
   grid-template-columns: repeat(7,1fr);
-  grid-template-rows: 91px;
+  grid-template-rows: 30px;
   justify-content: center;
   max-width: 800px;
   flex-wrap: nowrap;
-  gap: 40px;
 }
 
-.navbar2 div {
+.navbar2 nav ul {
   display: inline-flex;
   flex-direction: column;
+  margin-left: 10px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .navbar2 ul li {
   list-style: none;
-  display: grid;
-  max-width: 800px;
+  display: inline-block;
   flex-wrap: nowrap;
   margin-bottom: 15px;
+  margin-left: 0px;
   background-color: #41007E;
   border-radius: 20px;
-  width: 200px;
+  width: 250px;
 }
 
 .navbar2 ul li a {
-  display: grid;
+  display: inline-block;
   color: white;
   text-decoration: none;
   font-size: 0.9rem;
@@ -317,20 +321,17 @@ a {
   display: inline-flex;
   background: none;
   align-items: center;
+  margin-top: 150px;
 }
 
 .searchbar2 input {
-  background-color: #790000;
   border: none;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
   border-radius: 20px;
   font-size: 0.9rem;
-}
-
-.searchbar2 input:hover {
-  background-color: #490000;
+  margin-left: 10px;
 }
 
 .searchbar2 input[type=search] {
@@ -352,12 +353,6 @@ a {
     width: 100px;
   }
   .navbar ul li a {
-    font-size: 15px;
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-    padding-top: 2.4rem;
-    padding-bottom: 2.16rem;
-    margin: 0px;
   }
   .navbar ul {
     margin-left: 5px;
@@ -401,31 +396,31 @@ a {
     position: absolute;
     top: 0%;
     right: 0px;
+    margin-left: 0px;
     width: 340px;
     background: #5B00B3;
     transition: 0.2s ease; 
     padding-bottom: 100px;
   }
 
-  .navbar2 ul {
-    display: inline-flex;
-    flex-direction: column;
-    margin-left: 0px;
-    margin-top: 150px;
-  }
-
-  .navbar2 ul li {
+  .navbar2 nav ul li {
     padding: 0px;
-    display: inline-flex;
+    width: 225px;
   }
 
   .navbar2 ul li a{
-    margin: 0px;
+    margin-left: 0px;
     padding-left: 10px;
     padding-bottom: 15px;
     padding-top: 15px;
   }
 
+  .letsgo {
+    padding-top: 15px;
+    padding-right: 15px;
+    position: sticky;
+  }
+  
   .searchbar {
     display: none;
   }
@@ -437,7 +432,7 @@ a {
     margin-bottom: 0px;
   }
   .searchbar2 input {
-    width: 200px;
+    width: 220px;
     background: #41007E;
   }
 
@@ -457,7 +452,7 @@ a {
 
   #check:checked~.navbar2 ul li a {
     transform: translateY(0);
-  }
+  } 
 }
 
 
@@ -755,7 +750,7 @@ a {
 }
 
 .PosterCat img {
-  -webkit-mask-image: linear-gradient(black);
+  -webkit-mask-image: linear-gradient(black, black, black, black);
   opacity: 40%;
   width: 246.85px;
   height: 380.08px;
