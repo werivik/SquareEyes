@@ -996,17 +996,7 @@ a {
     width: 25px;
     height: 25px;
   }
-
-
 }
-
-
-
-
-
-
-//Page 2//
-
 .AM-M-FrontPoster{
   height: 750px;
   margin: 0px;
@@ -1027,7 +1017,7 @@ a {
 
 .Hogwarts img {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   height: 750px;
   margin-left: 0px;
   margin-right: 0px;
@@ -1038,6 +1028,7 @@ a {
 .AMMPosterText {
   position: absolute;
   top: 125px;
+  left: 0px;
   margin-left: 69px;
   background-color:transparent;
   font-size: 20px;
@@ -1149,40 +1140,6 @@ a {
   opacity: 100%;
 }
 
-@media (max-width: 1000px) {
-  .Hogwarts img {
-    height: 500px;
-  }
-
-  .AMMPosterText {
-    flex-wrap: nowrap;
-    word-wrap: break-word;
-    width: 100%;
-    margin-left: 30px;
-  }
-
-  .AMMPosterText h2{
-    font-size: 26px;
-  }
-
-  .AMMPosterText p {
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    word-wrap: break-word;
-  }
-
-  .PlayButton {
-    margin-top: 30px;
-  }
-
-  .PlayButton a {
-    font-size: 20px;
-  }
-}
-
-
-
 
 .AM-M-Content {
   display: inline-block;
@@ -1231,17 +1188,15 @@ a {
   opacity: 100%;
 }
 
-
 .AM-Posters-Sec1, .AM-Posters-Sec2, .AM-Posters-Sec3 {
   background-color:transparent;
-  display: inline-flexbox;
+  display: inline-flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 69px;
   margin-top: 40px;
 }
-
 
 .AMPoster1, .AMPoster2, .AMPoster3, .AMPoster4, .AMPoster5, .AMPoster6 {
   background-color: #0A0A0C;
@@ -1284,17 +1239,6 @@ a {
   margin-left: 5px;
   opacity: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .woods {
   float: right;
@@ -1396,7 +1340,7 @@ a {
 }
 
 .CM-Title-Content {
-  display: inline-flexbox;
+  display: inline-flex;
   margin-left: 69px;
   margin-right: 69px;
 }
@@ -1451,7 +1395,7 @@ a {
 }
 
 .CMPosterCat1 img, .CMPosterCat2 img, .CMPosterCat3 img, .CMPosterCat4 img, .CMPosterCat5 img {
-  -webkit-mask-image: linear-gradient(black);
+  -webkit-mask-image: linear-gradient(black, black, black, black);
   opacity: 20%;
 }
 
@@ -1474,21 +1418,6 @@ a {
   font-weight: bold;
   color:#CCA4FF;
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .trailer {
   float: right;
@@ -1579,9 +1508,6 @@ a {
   margin-right: 0px;
 }
 
-.MPfilmposter {
-}
-
 .MPPosterText p {
   margin-top: 15px;
   word-break: break-all;
@@ -1589,14 +1515,6 @@ a {
   margin-left: 15px;
   width: 450px;
 }
-
-/*
-.MPCast {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 10px;
-} */
 
 .MPCast p {
   line-height: 10px;
@@ -1644,8 +1562,6 @@ a {
   border-radius: 10px;
 }
 
-
-
 .CartButton {
   margin-top: 25px;
   display: flex;
@@ -1674,7 +1590,6 @@ a {
   opacity: 100%;
 }
 
-
 .buttonheart {
   font-size: 35px;
   background-color: black;
@@ -1700,7 +1615,7 @@ a {
 }
 
 .MP-Content {
-  display: inline-flexbox;
+  display: inline-flex;
   margin-left: 69px;
   margin-right: 69px;
 }
@@ -1740,21 +1655,6 @@ a {
 .MP-ButtonBack:hover {
   opacity: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 nav.flex-container-footer {
