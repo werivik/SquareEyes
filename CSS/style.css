@@ -222,14 +222,12 @@ a {
 
 .navbar2 ul li .letsgo {
   display: inline-block;
-  float: right;
   margin: auto;
   text-align: right;
   }
 
 .navbar2 ul li .letsgo i {
   display: inline-block;
-  float: right;
   margin: auto;
 }
 
@@ -351,8 +349,6 @@ a {
   }
   .searchbar input {
     width: 100px;
-  }
-  .navbar ul li a {
   }
   .navbar ul {
     margin-left: 5px;
@@ -1655,6 +1651,21 @@ a {
 .MP-ButtonBack:hover {
   opacity: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 nav.flex-container-footer {
