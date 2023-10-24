@@ -277,6 +277,11 @@ a {
   display: none;
 }
 
+.shoppingcartlink {
+  background-color: pink;
+  margin
+}
+
 .shoppingcart {
   display: inline-flex;
   text-decoration: none;
@@ -300,6 +305,7 @@ a {
 .searchbar input {
   background-color: #790000;
   border: none;
+  width: 250px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
@@ -348,10 +354,13 @@ a {
     margin-left: 10px;
   }
   .searchbar input {
-    width: 100px;
+    width: 200px;
   }
   .navbar ul {
     margin-left: 5px;
+  }
+  .shoppingcart i{
+    margin-left: 200px;
   }
 }
 
