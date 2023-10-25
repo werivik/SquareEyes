@@ -96,8 +96,6 @@ a {
   line-height: 115%;
 }
 
-
-
 .header {
   position: fixed;
   top: 0px;
@@ -152,7 +150,7 @@ a {
   display: grid;
   justify-content: center;
   float: left;
-  font-size: 1.15rem;
+  font-size: 16px;
   color: white;
   text-decoration: none;
   margin-left: 1.5rem;
@@ -165,6 +163,7 @@ a {
 .active {
   background: #5B00B3;
   font-weight: bold;
+  margin-left: 1.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 2.17rem;
@@ -230,7 +229,6 @@ a {
   display: inline-block;
   margin: auto;
 }
-
 
 .navbar2 ul li i{
   margin-top: 15px;
@@ -343,7 +341,7 @@ a {
 }
 
 
-@media (max-width: 1450px) {
+@media (max-width: 1200px) {
   .header {
     padding-left: 2.2rem;
     padding-right: 2.2rem;
@@ -366,7 +364,7 @@ a {
 
 @media (max-width: 1200px) {
   .navbar {
-    margin-left: 0px;
+    margin-left: 20px;
   }
 }
 
@@ -478,16 +476,17 @@ a {
 }
 
 .navbuttons {
+  display: none;
   list-style-type: none;
   justify-content: space-between;
   gap: 10px;
   position: absolute;
-  display: none;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .navbuttons li {
-  margin-left: 30px;
+  margin-left: 0px;
   margin-top: 0px;
 }
 
@@ -570,15 +569,6 @@ a {
   padding : 5px;
 }
 
-.scroll-text a {
-  text-decoration: none;
-  color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 24px;
-  display: flex;
-}
-
 .scroll-text span {
   height: 40px;
   padding-top: 5px;
@@ -605,6 +595,7 @@ a {
   transform: translateX(calc(180px - 100%));
   min-width: 50px;
 }
+
 
 .Poster1 img, .Poster2 img, .Poster3 img, .Poster4 img, .Poster5 img, .Poster6 img, .Poster7 img, .Poster8 img, .Poster9 img, .Poster10 img, .Poster11 img{
   width: 189px;
@@ -662,11 +653,14 @@ a {
 
 .AButtons {
   list-style-type: none;
+  text-decoration: none;
+  color: white;
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 69px;
   margin-right: 69px;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
 .ButtonAM1:hover {
@@ -764,7 +758,7 @@ a {
 .CatTag {
   position: absolute;
   top: 50%;
-  left: 125px;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
   font-weight: bold;
@@ -774,7 +768,7 @@ a {
 .CatTag:hover {
   position: absolute;
   top: 50%;
-  left: 125px;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
   font-weight: bold;
@@ -789,6 +783,76 @@ a {
 
 :root {
   scroll-behavior: smooth;
+}
+
+.Movie-Series-title {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  font-size: 50px;
+  position: relative;
+  margin-top: 100px;
+}
+.Movie-Series-title:before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 4px;
+  background: #790000;
+  left: 17%;
+  top: 50%;
+  position: absolute;
+}
+
+.Movie-Series-title:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 4px;
+  background: #790000;
+  right: 17%;
+  top: 50%;
+  position: absolute;
+}
+
+.Movie-Series {
+  margin-top: 20px;
+  display: inline-flex;
+  margin-left: 69px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.Movie-Series figure {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.Movie-Series figure a {
+  display: inline-block;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+
+.Movie-Series figure a img{
+  width: 297px;
+  height: 464px;
+  margin-right: 69px;
+}
+
+.Movie-Series figure figcaption {
+  font-size: 30px;
+  display: grid;
+  justify-content: center;
+  color: white;
+  background: #050506;
+  padding-top: 20px;
+  width: 297px;
+  height: 90px;
 }
 
 .topbutton {
@@ -824,18 +888,28 @@ a {
 @media (max-width: 900px) {
   .navbuttons {
     display: inline-flex;
-    margin-left: 30px;
-    padding-left: 0px;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 10px;
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
+  
+  .navbuttons li {
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
   .all-movies {
     margin-top: 30px;
     overflow-y: hidden;
   }
   .PM {
-    margin-top: 30px;
+    margin-top: 40px;
   }
 }
-
 
 @media (max-width: 750px) {
 
@@ -867,12 +941,6 @@ a {
   .FrontPoster {
     width: 100%;
     height: 200px;
-  }
-
-  .navbuttons {
-    display: inline-flex;
-    margin-left: 0px;
-    padding-left: 0px;
   }
 
   .all-movies {
@@ -959,7 +1027,6 @@ a {
     display: inline-flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
-    margin-left: 30px;
   }  
 
   .PosterCat {
@@ -968,6 +1035,7 @@ a {
     display: inline-flex;
     background-color: black;
     margin-left: 0px;
+    padding: 0px;
     margin-right: 25px;
   }
 
@@ -976,13 +1044,25 @@ a {
     word-break: break-all;
     display: flex;
     justify-content: center;
-    width: 100%;
+
+    padding: 0px;
+    margin-left: 0px;
     padding-right: 80px;
   }
 
   .PosterCat img {
     height: 276px;
     width: 169px;
+  }
+
+  .CatTag {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
   }
 
   .CatTag:hover{
@@ -1002,6 +1082,22 @@ a {
     height: 25px;
   }
 }
+
+@media (max-width: 1200px) {
+  .all-movies {
+    margin-left: 40px;
+  }
+  .PM {
+    margin-left: 40px;
+  }
+  .TC {
+    margin-left: 40px;
+  }
+  .Categories {
+    margin-left: 40px;
+  }
+}
+
 .AM-M-FrontPoster{
   height: 750px;
   margin: 0px;
