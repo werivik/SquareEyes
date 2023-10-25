@@ -141,7 +141,6 @@ a {
 .navbar ul li {
   list-style: none;
   display: grid;
-  margin-right: 10px;
   max-width: 800px;
   flex-wrap: nowrap;
 }
@@ -162,12 +161,19 @@ a {
 
 .active {
   background: #5B00B3;
+  display: grid;
   font-weight: bold;
+  justify-content: center;
+  text-decoration: none;
   margin-left: 1.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 2.17rem;
   padding-bottom: 2.1rem;
+}
+
+.special {
+  opacity: 75%;
 }
 
 .navbar ul li a:hover {
@@ -275,24 +281,6 @@ a {
   display: none;
 }
 
-.shoppingcartlink {
-  background-color: pink;
-  margin
-}
-
-.shoppingcart {
-  display: inline-flex;
-  text-decoration: none;
-  align-items: center;
-  margin-left: 20px;
-}
-
-.shoppingcart i {
-  font-size: 25px;
-  display: inline-flex;
-  flex-wrap: nowrap;
-}
-
 .searchbar {
   display: inline-flex;
   background: none;
@@ -357,9 +345,6 @@ a {
   .navbar ul {
     margin-left: 5px;
   }
-  .shoppingcart i{
-    margin-left: 200px;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -368,16 +353,11 @@ a {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .header {
     padding-left: 2.2rem;
     padding-right: 2.2rem;
   }
-  
-  .shoppingcart {
-    display: none;
-  }
-
   .menu-icon {
     display: inline-flex;
   }
@@ -558,6 +538,16 @@ a {
   width: 189px;
 }
 
+
+
+
+
+
+
+
+
+
+
 .scroll-text {
   height: 30px;
   border-radius: 3px;
@@ -593,8 +583,16 @@ a {
 .scroll-text:first-of-type:hover span {
   width: auto;
   transform: translateX(calc(180px - 100%));
-  min-width: 50px;
 }
+
+
+
+
+
+
+
+
+
 
 
 .Poster1 img, .Poster2 img, .Poster3 img, .Poster4 img, .Poster5 img, .Poster6 img, .Poster7 img, .Poster8 img, .Poster9 img, .Poster10 img, .Poster11 img{
@@ -797,10 +795,10 @@ a {
 .Movie-Series-title:before {
   content: "";
   display: block;
-  width: 200px;
+  width: 10%;
   height: 4px;
   background: #790000;
-  left: 17%;
+  left: 20%;
   top: 50%;
   position: absolute;
 }
@@ -808,10 +806,10 @@ a {
 .Movie-Series-title:after {
   content: "";
   display: block;
-  width: 200px;
+  width: 10%;
   height: 4px;
   background: #790000;
-  right: 17%;
+  right: 20%;
   top: 50%;
   position: absolute;
 }
@@ -883,6 +881,22 @@ a {
 
 .topbutton:active {
   opacity: 1;
+}
+@media (max-width: 1200px) {
+  .navbuttons {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .navbuttons li {
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 900px) {

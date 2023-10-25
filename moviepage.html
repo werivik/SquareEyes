@@ -18,41 +18,114 @@
 
 <body>
 
-  <header>
-    <div class="top-nav">
-      <div class="top-logo">
-        <a href="index.html" class="logo">
-          <img src="images/squareeyesheaderlogo.png" alt="" height="69px">
-        </a>
-      </div>
-      <nav class="links">
-        <ul>
+  <header class="header">
+    <a href="" class="logo">
+      <img src="images/squareeyesheaderlogo.png" alt="">
+    </a>
+    
+    <input type="checkbox" id="check">
+    <label for="check" class="menu-icon">
+      <i class="fa-solid fa-bars" style="color: #ffffff;" id="hamburger"></i>
+      <i class="fa-solid fa-xmark" style="color: #ffffff;" id="closeburger"></i>
+    </label>
+
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="index.html" >Home</a>
+        </li>
           <li>
-            <a href="index.html">Home</a>
+            <a href="all-movies.html"  >Movies</a>
           </li>
           <li>
-            <a href="all-movies.html" >All Movies</a>
+            <a href="categories.html" >Categories</a>
           </li>
-          <li>
-            <a href="categories.html">Categories</a>
-          </li>
-          <li>
+          <li class="special">
             <a href="about.html">About</a>
           </li>
-          <li>
-            <a href="contact.html">Contact</a>
+          <li class="special">
+            <a href="contact.html" >Contact</a>
           </li>
-          <div class="container"> 
-            <form action="all-movies.html" method="get" class="search-bar">
-              <input class="searchbar" type="Search" placeholder="Search..." name="q">
-              <button type="submit">
-                <img src="images/magnifying-glass-solid-white.svg" style="height: 20px; width: 20;">
-              </button>
-            </form>
+          <li class="searchbar">
+            <input type="search" name="box" placeholder="Search...">
+          </li>
+      </ul>
+    </nav>
+
+    <nav class="navbar2">
+      <input type="checkbox" id="check2">
+      <label for="check" class="menu-icon2">
+        <i class="fa-solid fa-xmark" style="color: #ffffff;" id="closeburger2"></i>
+      </label>
+     <nav>
+      <figure class="searchbar2">
+        <input type="search" name="box" placeholder="Search...">
+      </figure>
+      <ul>
+        <li>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          <a href="cart.html">Account Settings</a>
+          <div class="letsgo">
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
           </div>
-        </ul>
+        </li>
+        <li>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          <a href="cart.html">My Collection</a>
+          <div class="letsgo">
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+          </div>
+        </li>
+      </ul>
+       <ul>
+        <li>
+          <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          <a href="cart.html">Shopping Cart</a>
+          <div class="letsgo">
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+          <a href="cart.html">Subscription</a>
+          <div class="letsgo">
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <i class="fa-solid fa-people-group" style="color: #ffffff;"></i>
+          <a href="">Our Community</a>
+          <div class="letsgo">
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-glasses" style="color: #ffffff;"></i>
+          <a href="about.html">About Us</a>
+          <div class="letsgo">
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+          <a href="contact.html">Contact Us</a>
+          <div class="letsgo">
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+          </div>
+        </li>
+        <li>
+          <i class="fa-regular fa-circle-question" style="color: #ffffff;"></i>
+          <a href="">Help</a>
+                      <div class="letsgo">
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+          </div>
+        </li>
+      </ul>
       </nav>
-    </div>
+    </nav>
+
   </header>
 
 <main class="MP-M">
