@@ -755,6 +755,7 @@ a {
   min-height: 475px;
   max-height: 650px;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .SMovie {
@@ -765,6 +766,7 @@ a {
   margin-right: 30px;
   max-width: 300px;
   min-width: 350px;
+  position: relative;
 }
 
 .SMovie h2 { 
@@ -783,6 +785,11 @@ a {
 .SMovie a {
   text-decoration: none;
 }
+
+.SMovie a:hover {
+  color: #CCA4FF;
+}
+
 
 
 
