@@ -1033,13 +1033,12 @@ a {
   width: 450px;
 }
 .subplans {
-  background-color: pink;
   display: inline-flex;
   width: 100%;
   justify-content: center;
 }
 .Subscriptions {
-  background-color: #FF006B;
+  background-color: #0A0A0C;
   margin-right: 50px;
   width: 300px;
   padding-top: 10px;
@@ -1050,11 +1049,31 @@ a {
 
 .Subscriptions h2 {
   margin-left: 10px;
+  font-size: 25px;
 }
+
 .Subscriptions p {
   margin-left: 10px;
 }
 
+.price {
+  color: white;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.subbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.subbutton a {
+  text-decoration: none;
+  color: white;
+  background-color: #790000;
+  padding: 12px;
+  border-radius: 20px;
+}
 
 
 
