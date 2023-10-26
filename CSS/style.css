@@ -7,14 +7,10 @@ html { font-size: 16px;
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
   background-color: #0B0E12;
   background-image: linear-gradient( #161616, #0B0E12);
   width: 100%;
-  border-bottom-width: 1px;
   overflow-x: hidden;
-  min-height: 100vh;
 }
 
 .AU-M {
@@ -55,35 +51,24 @@ body {
 }
 
 h1, h2 {
-   margin-left: 69px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    margin-bottom: 6px;
-    clear: both;
-    color: white;
   }
 
 h3 {
-  margin-left: 69px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   color: white;
 }
 
 h4 {
-  margin-left: 69px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  margin-bottom: 8px;
 }
 
 p {
-  margin-left: 69px;
   color: white;
   font-size: medium;
-  margin-right: 10%;
-  line-height: normal;
-  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -442,8 +427,7 @@ a {
 .FrontPoster {
   background-position: top;
   padding: 0;
-  width: 100%;
-  height: 445px;
+  height: 575px;
   display: block;
   overflow: visible;
   object-fit: cover;
@@ -486,126 +470,73 @@ a {
   background: #5B00B3;
 }
 
-.all-movies {
+
+.All-MoviesTags {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
   margin-left: 69px;
-  display: inline-flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  width: 92%;
-}
-
-.Poster1, .Poster2, .Poster3, .Poster4, .Poster5, .Poster6, .Poster7, .Poster8, .Poster9, .Poster10, .Poster11 {
-  background-color: #0A0A0C;
-  position: relative;
-  min-width: 189px;
-}
-
-.poster-text-block {
-  position: absolute;
-  background-color: #0A0A0C;
-  display: flex;
-  width: 189px;
-  height: 100px;
-  flex-direction: column;
-}
- 
-.poster-tags {
-  display: inline-flex;
-  gap: 10px;
-  margin-left: 10px;
-  margin-right: 10px; 
-  font-size: 13px;
   margin-top: 20px;
-} 
+  max-width: 92%;
+  min-height: 475px;
+  max-height: 600px;
+  overflow-x: scroll;
+}
 
-.poster-tags a {
-  opacity: 0.6;
-  display: flex;
-  flex-direction: row;
-  text-decoration: none;
+.Movie {
+  background-color: #0A0A0C;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  margin-left: 0px;
+  margin-right: 40px;
+}
+
+.Movie h2 { 
+  font-size: 20px;
+  padding: 5px;
+}
+
+.Movie img {
+  width: 100%;
+  min-height: 280px;
+  min-width: 200px;
+}
+
+.Movie a {
+  border: none;
   color: white;
-  justify-content: center;
-  width: 189px;
-} 
-
-.poster-tags a:hover {
-  opacity: 1;
-  display: flex;
-  flex-direction: row;
+  text-align: center;
   text-decoration: none;
-  color: #CCA4FF;
-  justify-content: center;
-  width: 189px;
+  cursor: pointer;
 }
 
 
-
-
-
-
-
-
-
-
-
-.scroll-text {
-  height: 30px;
-  border-radius: 3px;
-  border-radius: 3px;
-  display: flex;
-  width: 180px;
-  overflow: hidden;
-  position: relative;
-  padding : 5px;
-}
-
-.scroll-text span {
-  height: 40px;
-  padding-top: 5px;
-  width: 180px;
-  text-overflow: ellipsis;
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  transform: translateX(0);
-  transition: 4s;
-}
-
-.scroll-text span a {
-  text-decoration: none;
-  color: white;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 24px;
-}
-
-.scroll-text:first-of-type:hover span {
-  width: auto;
-  transform: translateX(calc(180px - 100%));
-}
-
-
-
-
-
-
-
-
-
-
-
-.Poster1 img, .Poster2 img, .Poster3 img, .Poster4 img, .Poster5 img, .Poster6 img, .Poster7 img, .Poster8 img, .Poster9 img, .Poster10 img, .Poster11 img{
-  width: 189px;
-  height: 280.84px;
-}
-
-.Poster1, .Poster2, .Poster3, .Poster4, .Poster5, .Poster6, .Poster7, .Poster8, .Poster9, .Poster10, .Poster11 {
+.MTag a{
   display: inline-block;
-  margin: 0px 25px 10px 0px;
-  padding-bottom: 100px;
-  overflow-x: hidden;
-  white-space: nowrap;
+  padding: 5px;
+}
+
+.Movie a:hover {
+  color: #CCA4FF;
+}
+
+@media (max-width: 1200px) {
+  .All-MoviesTags {
+    margin-left: 40px;
+    min-height: 400px;
+    max-height: 550px;
+  }
+  .Movie img {
+    width: 100%;
+    min-width: 175px;
+    min-height: 260px;
+  }
+
+  .Movie h2 { 
+    font-size: 18px;
+    padding: 5px;
+  }
 }
 
 .PM {
@@ -815,43 +746,46 @@ a {
 }
 
 .Movie-Series {
-  margin-top: 20px;
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
   margin-left: 69px;
-  flex-wrap: nowrap;
+  margin-top: 35px;
+  max-width: 92%;
+  min-height: 475px;
+  max-height: 650px;
   overflow-x: scroll;
-  width: 100%;
-  margin-bottom: 100px;
 }
 
-.Movie-Series figure {
+.SMovie {
+  background-color: #0A0A0C;
+  text-align: center;
+  font-family: sans-serif;
   margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+  margin-right: 30px;
+  max-width: 300px;
+  min-width: 350px;
 }
 
-.Movie-Series figure a {
-  display: inline-block;
-  overflow-x: hidden;
-  white-space: nowrap;
-}
-
-.Movie-Series figure a img{
-  width: 297px;
-  height: 464px;
-  margin-right: 69px;
-}
-
-.Movie-Series figure figcaption {
-  font-size: 30px;
-  display: grid;
-  justify-content: center;
+.SMovie h2 { 
+  font-size: 20px;
+  padding: 5px;
   color: white;
-  background: #050506;
-  padding-top: 20px;
-  width: 297px;
-  height: 90px;
+  font-size: 30px;
 }
+
+.SMovie img {
+  width: 100%;
+  max-width: 300px;
+  min-width: 350px;
+}
+
+.SMovie a {
+  text-decoration: none;
+}
+
+
+
 
 .topbutton {
   position: sticky;
@@ -920,9 +854,7 @@ a {
     margin-top: 30px;
     overflow-y: hidden;
   }
-  .PM {
-    margin-top: 40px;
-  }
+
 }
 
 @media (max-width: 750px) {
@@ -957,16 +889,8 @@ a {
     height: 200px;
   }
 
-  .all-movies {
-    margin-left: 30px;
-    margin-right: 0px;
-    height: 240px;
-    margin-top: 5px;
-    overflow-y: hidden;
-  }
-
   .AButtons {
-    margin-right: 40px;
+    margin-right: 20px;
     margin-top: 80px;
    }
 
@@ -974,6 +898,25 @@ a {
     margin-left: 30px;
     font-size: 22px;
     margin-top: 0px;
+  }
+
+  .All-MoviesTags {
+    margin-left: 40px;
+    min-height: 200px;
+    max-height: 550px;
+  }
+  .Movie img {
+    width: 100%;
+    min-width: 145px;
+    min-height: 215px;
+  }
+
+  .Movie {
+    margin-right: 20px;
+  }
+
+  .Movie h2 { 
+    display: none;
   }
 
   .ButtonAM1 {
