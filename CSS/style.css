@@ -932,8 +932,7 @@ a {
 }
 
 .DYKB2 a:hover {
-  background: #9E0042;
-  background: linear-gradient(to right bottom, white, #FF006B, white);
+  background: linear-gradient(to right bottom, white, #9E0042, white);
 }
 
 .SECmobile {
@@ -1000,7 +999,7 @@ a {
   font-weight: bold;
   text-decoration: none;
   color: white;
-  background-color: #FF006B;
+  background-color: #9E0042;
   width: 175px;
   padding: 10px;
   border-radius: 20px;
