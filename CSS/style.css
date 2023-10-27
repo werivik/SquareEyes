@@ -1011,16 +1011,6 @@ a {
   margin-left: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .SubSec-title {
   display: flex;
   flex-direction: column;
@@ -1045,6 +1035,9 @@ a {
 
 .subplans {
   display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   width: 100%;
   justify-content: center;
   flex-wrap: nowrap;
@@ -1076,17 +1069,18 @@ a {
 }
 
 .price {
-  color: white;
+  color: #CCA4FF;
   font-size: 30px;
   margin-left: 10px;
 }
 
 .subbutton-free {
-  margin-top: 30px;
   display: flex;
   justify-content: center;
+  margin-top: 300px;
+  margin-left: 55px;
+  margin-right: 55px;
   background: linear-gradient(to right, red, #41007E);
-  margin: 55px;
   border-radius: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1095,6 +1089,7 @@ a {
 }
 
 .subbutton-free a {
+  text-align: center;
   text-decoration: none;
   color: white;
   background-color: #0B0E12;
@@ -1110,7 +1105,9 @@ a {
   display: flex;
   justify-content: center;
   background: linear-gradient(to bottom right, #4C4C4C, white, #4C4C4C);
-  margin: 55px;
+  margin-top: 250px;
+  margin-left: 55px;
+  margin-right: 55px;
   border-radius: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1133,7 +1130,9 @@ a {
   display: flex;
   justify-content: center;
   background: linear-gradient(to bottom right,#D0B300 , white, #D0B300);
-  margin: 55px;
+  margin-top: 110px;
+  margin-left: 55px;
+  margin-right: 55px;
   border-radius: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1165,15 +1164,6 @@ a {
   background: transparent;
   color: #161616;
 }
-
-
-
-
-
-
-
-
-
 
 .topbutton {
   position: sticky;
@@ -1297,7 +1287,7 @@ a {
 
 @media (max-width: 1300px) {  
   
-  .SubSec-title h2{
+  .SubSec-title h2 {
     font-size: 35px;
     margin-bottom: 15px;
   }
@@ -1318,24 +1308,36 @@ a {
   }
   .subbutton-free {
     padding: 5px;
-    margin: 45px;
+    margin-top: 250px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   .subbutton-free a {
     font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .subbutton-comfort {
     padding: 5px;
-    margin: 45px;
+    margin-top: 200px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   .subbutton-comfort a {
     font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .subbutton-moviefreak {
     padding: 5px;
-    margin: 45px;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   .subbutton-moviefreak a {
     font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .ButtonAMarrow {
     display: none;
@@ -1369,6 +1371,69 @@ a {
 }
 
 @media (max-width: 1000px) {
+
+  .SubSec {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .SubSecPlans {
+    overflow-x: scroll;
+  }
+  .SubSec-title h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .subplans {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .Subscriptions {
+    width: 250px;
+    min-height: 600px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .Subscriptions h2 {
+    font-size: 20px;
+  }
+  .subbutton-free {
+    padding: 5px;
+    margin-top: 270px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .subbutton-free a {
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .subbutton-comfort {
+    padding: 5px;
+    margin-top: 220px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .subbutton-comfort a {
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .subbutton-moviefreak {
+    padding: 5px;
+    margin-top: 60px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .subbutton-moviefreak a {
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   
   .ButtonAMarrow {
     display: none;
@@ -1404,78 +1469,58 @@ a {
 }
 
 @media (max-width: 900px) {
-
-  .SubSec-title h2{
-    margin-top: 80px;
-    font-size: 25px;
-    margin-bottom: 15px;
+  
+  .SubSec {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .SubSecPlans {
+    overflow-x: scroll;
   }
   .SubSec-title p{
-    font-size: 14px;
-    margin-left: 10px;
-    width: 400px;
+    margin-bottom: 20px;
   }
   .subplans {
+    width: 100%;
     display: inline-flex;
-    margin-left: 30px;
-    padding-left: 120px;
-    min-width: 400px;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-right: 20px;
+    padding-right: 20px;
     overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
   }
   .Subscriptions {
-    width: 200px;
-    min-height: 400px;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    margin: 5px;
+    margin-right: 10px;
+    display: inline-flex;
+    flex-wrap: nowrap;
   }
-  .Subscriptions h2 {
-    font-size: 15px;
-  }
-  .price {
-    font-size: 20px;
-  }
-  .Subscriptions p {
-    font-size: 14px;
-    width: 190px;
-    word-break: break-all;
-  }
+
   .subbutton-free {
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 5px;
-    padding: 1px;
+    margin-top: 270px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .subbutton-free a {
-    font-size: 12px;
-    padding: 10px;
+    font-size: 14px;
   }
   .subbutton-comfort {
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1px;
+    margin-top: 220px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .subbutton-comfort a {
-    font-size: 12px;
-    padding: 10px;
+    font-size: 14px;
   }
   .subbutton-moviefreak {
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 1px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
   .subbutton-moviefreak a {
-    font-size: 12px;
-    padding: 10px;
+    font-size: 14px;
   }
-  
+
   .ButtonAMarrow {
     display: none;
    }
