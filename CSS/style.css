@@ -892,7 +892,7 @@ a {
 }
 
 .SEC2 img {
-  background: linear-gradient(to right bottom, transparent, #FF006B, transparent);
+  background: linear-gradient(to right bottom, transparent, #9E0042, transparent);
   max-width: 500px;
   margin-left: 100px;
   margin-top: 40px;
@@ -919,7 +919,7 @@ a {
   margin-bottom: 15px;
   text-decoration: none;
   color: white;
-  background: #FF006B;
+  background: #9E0042;
   padding-left: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -932,7 +932,7 @@ a {
 }
 
 .DYKB2 a:hover {
-  background: #A10000;
+  background: #9E0042;
   background: linear-gradient(to right bottom, white, #FF006B, white);
 }
 
