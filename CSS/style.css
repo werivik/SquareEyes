@@ -109,25 +109,24 @@ a {
 .navbar {
   display: inline-flex;
   overflow: hidden;
-  margin-left: 50px;
+  margin-left: 0px;
   width: 100%;
   flex-wrap: nowrap;
 }
 
 .navbar ul {
-  margin-left: 3rem;
+  margin-left: 20px;
   display: grid;
   grid-template-columns: repeat(7,1fr);
   grid-template-rows: 91px;
   justify-content: center;
-  max-width: 800px;
+  max-width: 1000px;
   flex-wrap: nowrap;
 }
 
 .navbar ul li {
   list-style: none;
   display: grid;
-  max-width: 800px;
   flex-wrap: nowrap;
 }
 
@@ -138,9 +137,6 @@ a {
   font-size: 16px;
   color: white;
   text-decoration: none;
-  margin-left: 1.5rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
   padding-top: 2.17rem;
   padding-bottom: 2.1rem;
 }
@@ -160,6 +156,36 @@ a {
 
 .special {
   opacity: 75%;
+}
+
+.shopping-profile {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: 100%;
+  min-width: 100px;
+  max-width: 450px;
+  margin-left: 20px;
+}
+
+.shopping-cart {
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.shopping-cart a i{
+  font-size: 30px;
+  margin-top: 80%;
+}
+.profile {
+  margin-left: 50px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.profile a i{
+  font-size: 30px;
+  margin-top: 100%;
 }
 
 .navbar ul li a:hover {
@@ -270,14 +296,14 @@ a {
 .searchbar {
   display: inline-flex;
   background: none;
-  margin-left: 4rem;
+  margin-left: 5rem;
   align-items: center;
 }
 
 .searchbar input {
   background-color: #790000;
   border: none;
-  width: 250px;
+  width: 220px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
@@ -316,30 +342,21 @@ a {
 
 
 @media (max-width: 1200px) {
-  .header {
-    padding-left: 2.2rem;
-    padding-right: 2.2rem;
-    flex-wrap: nowrap;
-  }
+
   .searchbar {
     width: 0px;
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .searchbar input {
-    width: 200px;
+    width: 100px;
   }
+
   .navbar ul {
     margin-left: 5px;
   }
-}
-
-@media (max-width: 1200px) {
   .navbar {
     margin-left: 20px;
   }
-}
-
-@media (max-width: 1200px) {
   .header {
     padding-left: 2.2rem;
     padding-right: 2.2rem;
@@ -424,6 +441,52 @@ a {
   } 
 }
 
+@media (max-width:1350px) {
+
+  .navbar ul {
+    max-width: 850px;
+  }
+
+  .searchbar {
+    width: 0px;
+    margin-left: 20px;
+    margin-right: 0px;
+  }
+  .searchbar input {
+    width: 100px;
+  }
+  .shopping-profile {
+    margin-left: 20px;
+  }
+}
+
+.main-title {
+  position: relative;
+  text-align: center;
+}
+
+.main-title h1{
+  color: white;
+  position: absolute;
+  font-size: 90px;
+  left: 60px;
+  bottom: 50px;
+}
+.main-title i{
+  margin-left: 15px;
+}
+.main-title p{
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  left: 69px;
+  bottom:50px;
+}
+.main-title .Welcome {
+  bottom: 190px;
+  font-size: 30px;
+  left: 69px;
+}
 
 .FrontPoster {
   background-position: top;
@@ -433,11 +496,39 @@ a {
   overflow: visible;
   object-fit: cover;
   margin-bottom: 25px;
+  margin-top: 0px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   line-height: 110%;
   position: relative;
-  overflow-y: scroll;
+} 
+
+.gradient-frontposter img {
+  display: block;
+  background: black;
+  opacity: 75%;
+}
+
+.frontbutton {
+  display: inline-flex;
+  position: absolute;
+  top: 400px;
+  right: 150px;
+}
+
+.frontbutton a{
+  color: white;
+  text-decoration: none;
+  background-color: #BC0000;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.frontbutton a:hover {
+  background-color: #41007E;
 }
 
 .navbuttons {
@@ -470,7 +561,6 @@ a {
 .navbuttons .homepage-button {
   background: #5B00B3;
 }
-
 
 .All-MoviesTags {
   display: flex;
@@ -1079,7 +1169,7 @@ a {
   margin-top: 300px;
   margin-left: 55px;
   margin-right: 55px;
-  background: linear-gradient(to right, red, #41007E);
+  background: #790000;
   border-radius: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -1194,6 +1284,34 @@ a {
   opacity: 1;
 }
 @media (max-width: 1200px) {
+
+  .main-title h1{
+    font-size: 75px;
+  }
+  .main-title .Welcome {
+    bottom: 160px;
+  }
+  .main-title p {
+    left: 270px;
+  }
+
+  .frontbutton {
+    display: inline-flex;
+    position: absolute;
+    top: 410px;
+    right: 40px;
+  }
+  
+  .frontbutton a{
+    color: white;
+    text-decoration: none;
+    background-color: #BC0000;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    font-size: 15px;
+  }
 
   .SEC1 {
     margin-top: 0px;
@@ -1369,7 +1487,27 @@ a {
 
 }
 
+
+
 @media (max-width: 1000px) {
+
+  .frontbutton {
+    display: inline-flex;
+    position: absolute;
+    top: 400px;
+    right: 40px;
+  }
+  
+  .frontbutton a{
+    color: white;
+    text-decoration: none;
+    background-color: #BC0000;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    font-size: 14px;
+  }
 
   .SubSec {
     margin-top: 40px;
@@ -1467,7 +1605,28 @@ a {
   }
 }
 
+@media (max-width: 750px) {
+  .main-title h1{
+    font-size: 45px;
+    bottom: 20px;
+  }
+  .main-title .Welcome {
+    bottom: 80px;
+    font-size: 20px;
+  }
+  .main-title p {
+    bottom: 0px;
+    left: 60px;
+  }
+}
+
 @media (max-width: 900px) {
+
+  .frontbutton {
+    display: none;
+  }
+  
+
   
   .SubSec {
     margin-top: 40px;
@@ -1615,6 +1774,11 @@ a {
 }
 
 @media (max-width: 750px) {
+
+  .frontbutton {
+    display: none;
+  }
+  
 
   .SECmobile {
     position: relative;
