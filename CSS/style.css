@@ -753,7 +753,7 @@ a {
   max-height: 650px;
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-bottom: 40px;
+  margin-bottom: 150px;
 }
 
 .SMovie {
@@ -1021,26 +1021,44 @@ a {
 
 
 
-
+.SubSec-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
 .SubSec h2 {
-  margin-left: 69px;
   color: white;
   font-size: 30px;
 }
-.SubSec p{
-  margin-left: 69px;
-  width: 450px;
+.SubSec-title h2{
+  font-size: 40px;
+  padding: 0px;
+  margin-bottom: 15px;
 }
+.SubSec-title p{
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
 .subplans {
   display: inline-flex;
   width: 100%;
   justify-content: center;
+  flex-wrap: nowrap;
 }
+
 .Subscriptions {
   background-color: #0A0A0C;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
   margin-right: 50px;
   width: 300px;
+  height: 100%;
+  min-height: 625px;
   padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -1054,6 +1072,7 @@ a {
 
 .Subscriptions p {
   margin-left: 10px;
+  margin-bottom: 0px;
 }
 
 .price {
@@ -1062,17 +1081,89 @@ a {
   margin-left: 10px;
 }
 
-.subbutton {
+.subbutton-free {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
+  background: linear-gradient(to right, red, #41007E);
+  margin: 55px;
+  border-radius: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.subbutton a {
+.subbutton-free a {
   text-decoration: none;
   color: white;
-  background-color: #790000;
-  padding: 12px;
-  border-radius: 20px;
+  background-color: #0B0E12;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.subbutton-comfort {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #4C4C4C, white, #4C4C4C);
+  margin: 55px;
+  border-radius: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.subbutton-comfort a{
+  text-decoration: none;
+  color: white;
+  background-color: #0B0E12;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.subbutton-moviefreak {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom right,#D0B300 , white, #D0B300);
+  margin: 55px;
+  border-radius: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.subbutton-moviefreak a{
+  text-decoration: none;
+  color: white;
+  background-color: #0B0E12;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.subbutton-free a:hover {
+  background: transparent;
+}
+
+.subbutton-comfort a:hover {
+  background: transparent;
+  color: #161616;
+}
+
+.subbutton-moviefreak a:hover {
+  background: transparent;
+  color: #161616;
 }
 
 
@@ -1205,6 +1296,51 @@ a {
 }
 
 @media (max-width: 1300px) {  
+  
+  .SubSec-title h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .subplans {
+    margin-left: 30px;
+    overflow-x: scroll;
+  }
+  .Subscriptions {
+    width: 250px;
+    min-height: 600px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .Subscriptions h2 {
+    font-size: 20px;
+  }
+  .subbutton-free {
+    padding: 5px;
+    margin: 45px;
+  }
+  .subbutton-free a {
+    font-size: 15px;
+  }
+  .subbutton-comfort {
+    padding: 5px;
+    margin: 45px;
+  }
+  .subbutton-comfort a {
+    font-size: 15px;
+  }
+  .subbutton-moviefreak {
+    padding: 5px;
+    margin: 45px;
+  }
+  .subbutton-moviefreak a {
+    font-size: 15px;
+  }
+  .ButtonAMarrow {
+    display: none;
+   }
+
   .SEC1 .DYKT {
     padding-left: 40px;
   }
@@ -1233,6 +1369,10 @@ a {
 }
 
 @media (max-width: 1000px) {
+  
+  .ButtonAMarrow {
+    display: none;
+   }
 
   .Movie-Series-title{
     font-size: 40px;
@@ -1264,6 +1404,82 @@ a {
 }
 
 @media (max-width: 900px) {
+
+  .SubSec-title h2{
+    margin-top: 80px;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .SubSec-title p{
+    font-size: 14px;
+    margin-left: 10px;
+    width: 400px;
+  }
+  .subplans {
+    display: inline-flex;
+    margin-left: 30px;
+    padding-left: 120px;
+    min-width: 400px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .Subscriptions {
+    width: 200px;
+    min-height: 400px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
+  }
+  .Subscriptions h2 {
+    font-size: 15px;
+  }
+  .price {
+    font-size: 20px;
+  }
+  .Subscriptions p {
+    font-size: 14px;
+    width: 190px;
+    word-break: break-all;
+  }
+  .subbutton-free {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 5px;
+    padding: 1px;
+  }
+  .subbutton-free a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .subbutton-comfort {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 1px;
+  }
+  .subbutton-comfort a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .subbutton-moviefreak {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 1px;
+  }
+  .subbutton-moviefreak a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  
+  .ButtonAMarrow {
+    display: none;
+   }
+
   .SEC {
     display: none;
   }
