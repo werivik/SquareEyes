@@ -77,11 +77,6 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.AUP {
-  font-size: 1.5rem;
-  line-height: 115%;
-}
-
 .failed-body {
   padding-top: 120px;
   height: 600px;
@@ -2113,8 +2108,7 @@ a {
   color: white;
   background-color: transparent;
   font-size: 55px;
-  width: 1500px;
-  padding: 0px;
+  padding-right: 50px;
   line-height: 10px;
 }
 
@@ -3237,6 +3231,7 @@ a {
 }
 
 
+
 .AU-Content {
   display: flex;
   flex-direction: column;
@@ -3258,6 +3253,247 @@ a {
   margin-right: 550px;
 }
 
+.AU-Content p{
+  font-size: 20px;
+}
+
+.AU-socials {
+  margin-top: 100px;
+  margin-left: 69px;
+}
+
+.AU-socials p {
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.AU-socials i {
+  display: inline-flex;
+  font-size: 40px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.navbuttons-AU {
+  display: none;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 10px;
+  position: absolute;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.navbuttons-AU li {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.navbuttons-AU li a{
+  color: white;
+  text-decoration: none;
+  background: #737373;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.navbuttons-AU li .navgoback {
+  padding-left: 5px;
+  padding-right: 2px;
+  margin-right: 10px;
+}
+
+.navbuttons-AU li .navgoback input {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbuttons-AU .homepage-button {
+  background: #5B00B3;
+}
+
+@media (max-width: 1200px) {
+
+  .navbuttons-AU {
+    display: inline;
+    top: 50px;
+  }
+ 
+  .AU-M h1 {
+    margin-left: 40px;
+  }
+  .AU-M h2 {
+    margin-left: 40px;
+  }
+  .AU-M p {
+    margin-left: 40px;
+    margin-right: 350px;
+  }
+  .AU-socials {
+    margin-top: 100px;
+    margin-left: 40px;
+  }
+  
+  .AU-socials p {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .AU-socials i {
+    display: inline-flex;
+    font-size: 40px;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .AU-M p {
+    margin-right: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .AU-M p {
+    margin-right: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+  .AU-M p {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 750px) {
+  .AU-M p {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .AU-M p {
+    margin-right: 10px;
+  }
+}
+
+
+
+.CU-Content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.CU-Content h1 {
+  color: white;
+}
+
+.CU-Content h2 {
+  color: white;
+  line-height: 30px;
+  margin-top: 60px;
+}
+
+.CU-Content p {
+  color: white;
+}
+
+.contact-methods {
+  text-align: center;
+  margin-top: 50px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.contact-methods p {
+  padding-right: 0px;
+  margin-top: 30px;
+}
+
+.contact-methods i {
+  font-size: 40px;
+  padding: 5px;
+}
+
+
+.navbuttons-CU {
+  display: none;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 10px;
+  position: absolute;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.navbuttons-CU li {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.navbuttons-CU li a{
+  color: white;
+  text-decoration: none;
+  background: #737373;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.navbuttons-CU li .navgoback {
+  padding-left: 5px;
+  padding-right: 2px;
+  margin-right: 10px;
+}
+
+.navbuttons-CU li .navgoback input {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbuttons-CU .homepage-button {
+  background: #5B00B3;
+}
+
+@media (max-width: 1200px) {
+
+  .navbuttons-CU {
+    display: inline;
+    top: 50px;
+  }
+ 
+  .CU-M h1 {
+    margin-left: 40px;
+  }
+  .CU-M h2 {
+    margin-left: 40px;
+  }
+  .CU-M p {
+    margin-left: 40px;
+    margin-right: 350px;
+  }
+}
 
 
 
