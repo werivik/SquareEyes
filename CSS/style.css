@@ -82,6 +82,11 @@ a {
   line-height: 115%;
 }
 
+.failed-body {
+  padding-top: 120px;
+  height: 600px;
+}
+
 .header {
   position: fixed;
   top: 0px;
@@ -2765,12 +2770,6 @@ a {
   background: #5B00B3;
 }
 
-
-
-
-
-
-
 .CM-Posters-Sec {
   width: 100%;
   display: flex;
@@ -2787,14 +2786,14 @@ a {
   display: inline-block;
   margin-top: 20px;
   margin-left: 0px;
-  margin-right: 20px;
+  margin-right: 50px;
   justify-content: space-between;
   background-color: black;
 }
 
 .CMPosterCat img {
   opacity: 30%;
-  max-width: 246.85px;
+  max-width: 220px;
 }
 
 .CMPosterCatTag {
@@ -2802,13 +2801,169 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   color: white;
 }
 
 
+@media (max-width: 1200px) {
+  .navbuttons-CM {
+    display: inline;
+  }
 
+  .CM-Title-Content {
+    margin-top: 0px;
+    margin-left: 40px;
+  }
+
+  .CM-Posters-Sec {
+    margin-left: 40px;
+  }
+  
+  .CM-ButtonBack {
+    display: none;
+  }
+
+  .C-M-FrontPoster{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 500px;
+  }
+
+  .tatm {
+    font-size: 20px;
+  }
+  
+  .woods {
+  height: 500px;
+ }
+
+ .woods img {
+  height: 500px;
+ }
+
+ .CMPosterText {
+  top: 170px;
+  margin-left: 40px;
+ }
+
+ .CMPosterText h2 {
+  font-size: 40px;
+ }
+
+ .PlayButton {
+  margin-top: 50px;
+ }
+
+ .PlayButton a {
+  font-size: 22px;
+ }
+}
+
+@media (max-width: 990px) {
+  
+  .tatm {
+    font-size: 18px;
+  }
+
+ .CMPosterText {
+  top: 170px;
+  margin-left: 40px;
+ }
+
+ .CMPosterText h2 {
+  font-size: 35px;
+ }
+
+ .PlayButton {
+  margin-top: 30px;
+ }
+
+ .PlayButton a {
+  font-size: 20px;
+ }
+  .CM-h {
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+
+  .CMPoster{
+    max-width: 175px;
+  }
+  .CMPoster img {
+    max-width: 175px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .navbuttons-CM {
+    margin-top: 50px;
+  }
+
+  .tatm {
+    font-size: 18px;
+  }
+
+  .C-M-FrontPoster{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 350px;
+  }
+
+  .CMPosterText {
+  top: 170px;
+  margin-left: 40px;
+  }
+
+  .CMPosterText h2 {
+  font-size: 27px;
+  }
+
+  .CMPosterText p {
+  font-size: 18px;
+  width: 605px;
+  }
+
+  .PlayButton a {
+  font-size: 17px;
+  }
+
+ .CM-h {
+  font-size: 40px;
+  margin-bottom: 0px;
+  }
+
+  .CMPoster{
+    max-width: 165px;
+  }
+  .CMPoster img {
+    max-width: 165px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .CMPosterText p {
+    font-size: 18px;
+    width: 470px;
+  }
+
+  .CMPosterTags {
+    margin-top: 0px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .CMPosterText p {
+    font-size: 16px;
+    width: 375px;
+    }
+
+}
 
 
 
@@ -3074,12 +3229,30 @@ a {
 
 
 
+.failed-body h1 {
+  margin-left: 69px;
+  color: white;
+}
 
+.failed-body p {
+  margin-left: 69px;
+  padding-right: 10px;
+}
 
+.failed-body .failed-link {
+  color: rgb(0, 213, 255);
+  font-weight: bold;
+}
 
-
-
-
+@media (max-width: 1200px) {
+  .failed-body h1 {
+    margin-top: 70px;
+    margin-left: 40px;
+  }
+  .failed-body p {
+    margin-left: 40px;
+  }
+}
 
 
 nav.flex-container-footer {
