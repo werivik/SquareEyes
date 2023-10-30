@@ -746,11 +746,6 @@ a {
   display: none;
 }
 
-.CategoriesPosters {
-  display: inline-block;
-  margin-top: 0px;
-}
-
 .PosterCat {
   position: relative;
   color: white;
@@ -792,16 +787,9 @@ a {
   color:#CCA4FF;
 }
 
-.Cat {
-  display: inline-block;
-  overflow: auto;
-  white-space: nowrap;
-}
-
 :root {
   scroll-behavior: smooth;
 }
-
 .Movie-Series-title {
   display: grid;
   justify-content: center;
@@ -2778,28 +2766,35 @@ a {
 }
 
 
-.CM-Posters-Sec{
-  justify-content: center;
+
+
+
+
+
+.CM-Posters-Sec {
   width: 100%;
   display: flex;
   flex-direction: row;
-  position: relative;
   text-align: center;
+  margin-left: 69px;
   margin-top: 20px;
   flex-flow: row wrap;
-}
+}  
 
-.CMPosterCat a {
-  width: 100%;
-  text-decoration: none;
+.CMPosterCat {
+  position: relative;
   color: white;
-  background: black;
-  height: 380.08px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 20px;
+  justify-content: space-between;
+  background-color: black;
 }
 
 .CMPosterCat img {
+  opacity: 30%;
   max-width: 246.85px;
-  min-height: 380.08px;
 }
 
 .CMPosterCatTag {
@@ -2811,7 +2806,6 @@ a {
   font-weight: bold;
   color: white;
 }
-
 
 
 
