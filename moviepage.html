@@ -49,6 +49,14 @@
           <li class="searchbar">
             <input type="search" name="box" placeholder="Search...">
           </li>
+          <div class="shopping-profile">
+            <div class="shopping-cart">
+              <a href="cart.html"><i class="fa-solid fa-basket-shopping" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="profile">
+              <a href=""><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+            </div>
+          </div>
       </ul>
     </nav>
 
@@ -130,12 +138,14 @@
 
 <main class="MP-M">
 
-  <div class="MP-FrontPoster" style="width: 100%;">
+  <div class="MP-FrontPoster">
     <figure class="trailer">
-      <img src="images/trailerpicture.png" alt="" height="800px">
+      <img src="images/trailerpicture.png" alt="" >
+      <a href="https://www.youtube.com/watch?v=IAZEWtyhpes">
+      </a>
     </figure>
     <div class="MPPosterText">
-      <h2>What We Do in the Shadows</h2>
+      <h1>What We Do in the Shadows</h1>
       <div class="MPTop">
         <div class="MPRating">
           <span class="fa fa-star checked"></span>
@@ -155,13 +165,13 @@
           <a class="MPTag" href="categories.html">Documentary</a>
         </div>
         <div class="MPposterandtext">
-            <img src="images/posters/What We Do in the shadows.jpg" class="MPfilmposter" alt="" width="250px">
+            <img src="images/VSBilder/WhatWeDointheshadows.jpg" class="MPfilmposter" alt="">
             <p>Viago, Deacon and Vladislav are vampires who live together as housemates. They face everyday challenges like paying rent, doing chores and trying to get into nightclubs.</p>
         </div>
         <div class="MPCast">
             <p><span><a class="spanlink" href="">Cast:</a></span> <a href="">Jemaine Clement</a>, <a href="">Taika Waititi</a>, <a href="">Jonny Brugh</a></p>
             <p><span><a class="spanlink" href="">Creator:</a></span> <a href="">Jemaine Clement</a>, <a href="">Taika Waititi</a></p>
-            <div class="SeeMoreButton"><a href="">See More</a></div>
+            <div class="SeeMoreButton"><a href="https://www.imdb.com/title/tt3416742/fullcredits/?ref_=tt_cl_sm">See More</a></div>
         </div>
         <div class="CartButton">
           <a href="all-movies.html">
@@ -176,20 +186,26 @@
       </div>
   </div>
 
+  <div class="trailers-yt">
 
-  <div class="MP-Content">
-    <h1 class="MP-h">More like This</h1>
-    <div class="MP-ButtonBack">
-      <form class="MPGoBack">
-        <div class="MPGoBackButton">
-          <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
-          <input type="Button" value="Go Back" onclick="history.back(-1)">
-        </div>
-      </form>
+    <div class="trailer-clips">
+      <h3>Trailer</h3>
+      <iframe 
+      src="https://www.youtube.com/embed/IAZEWtyhpes?si=S4cEL2gn4zw1SQFu&amp;controls=0" title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
     </div>
+  
+      <div class="trailer-director">
+        <h3>From the same Director</h3>
+        <iframe
+         src="https://www.youtube.com/embed/tL4McUzXfFI?si=MeEndj0NeX1IPm0T" 
+         title="YouTube video player" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
   </div>
-
-
 
 
 </main>

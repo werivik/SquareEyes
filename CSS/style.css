@@ -2980,23 +2980,11 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .trailer {
-  float: right;
-  margin-right: 0;
-  padding: 0;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 900px;
   position: relative;
 
   -webkit-mask-image: linear-gradient(black, black, transparent);
@@ -3004,7 +2992,9 @@ a {
 
 .trailer img {
   display: block;
+  height: 800px;
 }
+
 
 .MPPosterText {
   position: absolute;
@@ -3082,12 +3072,20 @@ a {
   margin-right: 0px;
 }
 
+.MPPosterText img {
+  width: 250px;
+}
+
 .MPPosterText p {
   margin-top: 15px;
-  word-break: break-all;
   font-size: 24px;
   margin-left: 15px;
-  width: 450px;
+  padding-right: 550px;
+}
+
+.MPPosterText h1 {
+  color: white;
+  font-size: 50px;
 }
 
 .MPCast p {
@@ -3119,7 +3117,6 @@ a {
 
 .SeeMoreButton {
   margin-top: 5px;
-  float: right;
 }
 
 .SeeMoreButton a{
@@ -3229,6 +3226,122 @@ a {
 .MP-ButtonBack:hover {
   opacity: 100%;
 }
+
+.trailers-yt {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.trailer-clips {
+  margin-left: 69px;
+  flex-direction: column;
+}
+
+.trailer-clips iframe {
+  display: block;
+  width: 500px;
+  height: 300px;
+}
+
+.trailer-clips h3{
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.trailer-director {
+  flex-direction: column;
+}
+
+.trailer-director iframe {
+  display: block;
+  width: 500px;
+  height: 300px;
+}
+
+.trailer-director h3{
+  font-size: 25px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 1400px) {
+  .MPPosterText p {
+    padding-right: 250px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .MPPosterText p {
+    padding-right: 200px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .MPPosterText p {
+    padding-right: 150px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .MPPosterText p {
+    padding-right: 50px;
+  }
+  .MPPosterText img {
+    width: 200px;
+  }
+  .MPCast a {
+    line-height: 10px;
+    margin-left: 0px;
+    font-size: 14px;
+  }
+
+  .SeeMoreButton a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 900px) {
+  .MPPosterText p {
+    padding-right: 10px;
+    font-size: 19px;
+  }
+  .MPPosterText img {
+    width: 150px;
+  }
+
+  .CartButton a {
+    font-size: 22px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .CartButton i {
+    margin-right: 2px;
+    font-size: 18px;
+  }
+
+  .buttonheart i {
+    font-size: 25px;
+    padding-right: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -3387,8 +3500,6 @@ a {
   }
 }
 
-
-
 .CU-Content {
   width: 100%;
   text-align: center;
@@ -3426,7 +3537,6 @@ a {
   font-size: 40px;
   padding: 5px;
 }
-
 
 .navbuttons-CU {
   display: none;
@@ -3482,24 +3592,17 @@ a {
     display: inline;
     top: 50px;
   }
- 
-  .CU-M h1 {
-    margin-left: 40px;
+
+  .CU-Content p {
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  .CU-M h2 {
-    margin-left: 40px;
+
+  .contact-methods {
+    margin-top: 10px;
   }
-  .CU-M p {
-    margin-left: 40px;
-    margin-right: 350px;
-  }
+
 }
-
-
-
-
-
-
 
 .failed-body h1 {
   margin-left: 69px;
