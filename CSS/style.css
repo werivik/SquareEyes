@@ -163,6 +163,10 @@ a {
   opacity: 75%;
 }
 
+.special2 {
+  opacity: 100%;
+}
+
 .shopping-profile {
   display: inline-flex;
   justify-content: flex-end;
@@ -2717,6 +2721,7 @@ a {
   word-break: break-all;
   width: 650px;
   padding-top: 25px;
+  padding-right: 10px;
   font-size: 20px;
 }
 
@@ -2867,10 +2872,18 @@ a {
     font-size: 18px;
   }
 
- .CMPosterText {
-  top: 170px;
-  margin-left: 40px;
- }
+  .woods {
+    height: 400px;
+   }
+  
+   .woods img {
+    height: 400px;
+   }
+
+  .CMPosterText {
+    top: 170px;
+    margin-left: 40px;
+  }
 
  .CMPosterText h2 {
   font-size: 35px;
@@ -2883,15 +2896,17 @@ a {
  .PlayButton a {
   font-size: 20px;
  }
+
   .CM-h {
-    font-size: 45px;
+    z-index: 999;
+    font-size: 40px;
     margin-bottom: 0px;
   }
 
-  .CMPoster{
+  .CMPosterCat{
     max-width: 175px;
   }
-  .CMPoster img {
+  .CMPosterCat img {
     max-width: 175px;
   }
 
@@ -2935,11 +2950,11 @@ a {
   margin-bottom: 0px;
   }
 
-  .CMPoster{
-    max-width: 165px;
+  .CMPosterCat{
+    max-width: 160px;
   }
-  .CMPoster img {
-    max-width: 165px;
+  .CMPosterCat img {
+    max-width: 160px;
   }
 }
 
@@ -3221,6 +3236,27 @@ a {
   opacity: 100%;
 }
 
+
+.AU-Content {
+  display: flex;
+  flex-direction: column;
+}
+
+.AU-M h1 {
+  color: white;
+  margin-left: 69px;
+}
+
+.AU-M h2 {
+  color: white;
+  margin-left: 69px;
+}
+
+.AU-M p {
+  margin-left: 69px;
+  padding-right: 10px;
+  margin-right: 550px;
+}
 
 
 
