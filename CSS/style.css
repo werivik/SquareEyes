@@ -2974,17 +2974,11 @@ a {
 
 }
 
-
-
-
-
-
-
 .trailer {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  height: 900px;
+  height: 800px;
   position: relative;
 
   -webkit-mask-image: linear-gradient(black, black, transparent);
@@ -2995,7 +2989,6 @@ a {
   height: 800px;
 }
 
-
 .MPPosterText {
   position: absolute;
   top: 125px;
@@ -3005,17 +2998,17 @@ a {
   text-align: left;
 }
 
-.MPPosterText h2 {
+.MPPosterText h1 {
   background-color: transparent;
   margin-left: 0px;
   margin-top: 0px;
   font-size: 55px;
-  width: 1500px;
+  padding-right: 20px;
 }
 
 .MPTop {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .MPRating {
@@ -3088,53 +3081,8 @@ a {
   font-size: 50px;
 }
 
-.MPCast p {
-  line-height: 10px;
-  margin-left: 0px;
-  font-size: 16px;
-}
-
-.MPCast a {
-  text-decoration: none;
-  color: white;
-  opacity: 70%;
-}
-
-.spanlink {
-  margin-right: 5px;
-  color: #CCA4FF;
-}
-
-.MPCast a:hover {
-  opacity: 100%;
-  font-weight: bold;
-}
-
-.spanlink:hover {
-  color: #5B00B3;
-  font-weight: bold;
-}
-
-.SeeMoreButton {
-  margin-top: 5px;
-}
-
-.SeeMoreButton a{
-  background-color: #0A0A0C;
-  text-align: center;
-  text-decoration: none;
-  color: red;
-  border: solid 1px red;
-  font-size: 14px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 8px;
-  padding-right: 8px;
-  border-radius: 10px;
-}
-
 .CartButton {
-  margin-top: 25px;
+  margin-top: 50px;
   display: flex;
 }
 
@@ -3230,7 +3178,7 @@ a {
 .trailers-yt {
   background: #0A0C10;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   width: 100%;
   display: inline-flex;
   flex-direction: row;
@@ -3240,12 +3188,13 @@ a {
 .trailer-clips {
   margin-left: 69px;
   flex-direction: column;
+  margin-right: 55px;
 }
 
 .trailer-clips iframe {
   display: block;
   width: 400px;
-  height: 250px;
+  height: 270px;
 }
 
 .trailer-clips h3{
@@ -3274,6 +3223,7 @@ a {
 
 .Movie-Cast {
   overflow-x: scroll;
+  width: 62%;
 }
 
 .Movie-Cast h3 {
@@ -3285,25 +3235,31 @@ a {
 
 .casts {
   display: inline-flex;
-  gap: 30px;
+  gap: 40px;
+}
+
+.casts h4 {
+  margin-top: 2.5px;
+}
+
+.cast-pictures p {
+  font-size: 14px;
+  opacity: 70%;
+  margin-top: 0px;
 }
 
 .cast-pictures img {
-  height: 200px;
+  height: 175px;
 }
 
 .cast-pictures {
-  background-color: black;
+  background-color: #07080B;
   text-align: center;
 }
 
 .cast-pictures a {
   color: white;
   text-decoration: none;
-}
-
-.cast-pictures h4 {
-  padding: 5px;
 }
 
 .cast-pictures a:hover {
