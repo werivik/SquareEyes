@@ -1283,8 +1283,94 @@ a {
 .topbutton:active {
   opacity: 1;
 }
-@media (max-width: 1200px) {
 
+@media (max-width: 1300px) {  
+  
+  .SubSec-title h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+  .subplans {
+    margin-left: 30px;
+    overflow-x: scroll;
+  }
+  .Subscriptions {
+    width: 250px;
+    min-height: 600px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  .Subscriptions h2 {
+    font-size: 20px;
+  }
+  .subbutton-free {
+    padding: 5px;
+    margin-top: 250px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .subbutton-free a {
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .subbutton-comfort {
+    padding: 5px;
+    margin-top: 200px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .subbutton-comfort a {
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .subbutton-moviefreak {
+    padding: 5px;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .subbutton-moviefreak a {
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .ButtonAMarrow {
+    display: none;
+   }
+
+  .SEC1 .DYKT {
+    padding-left: 40px;
+  }
+
+  .SEC1 .DYKP {
+    margin-left: 40px;
+    word-break: break-all;
+    width: 470px;
+    font-size: 20px;
+  }
+
+  .SEC1 .DYKB {
+    margin-left: 40px;
+    font-size: 18px;
+    margin-top: 230px;
+  }
+
+  .SEC1 img {
+    margin-right: 40px;
+  }
+
+  .SEC2 img {
+    margin-left: 40px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  
   .main-title h1{
     font-size: 75px;
   }
@@ -1400,94 +1486,19 @@ a {
     font-size: 20px;
     padding: 5px;
   }
+  .all-movies {
+    margin-left: 40px;
+  }
+  .PM {
+    margin-left: 40px;
+  }
+  .TC {
+    margin-left: 40px;
+  }
+  .Categories {
+    margin-left: 40px;
+  }
 }
-
-@media (max-width: 1300px) {  
-  
-  .SubSec-title h2 {
-    font-size: 35px;
-    margin-bottom: 15px;
-  }
-  .subplans {
-    margin-left: 30px;
-    overflow-x: scroll;
-  }
-  .Subscriptions {
-    width: 250px;
-    min-height: 600px;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-  }
-  .Subscriptions h2 {
-    font-size: 20px;
-  }
-  .subbutton-free {
-    padding: 5px;
-    margin-top: 250px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .subbutton-free a {
-    font-size: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .subbutton-comfort {
-    padding: 5px;
-    margin-top: 200px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .subbutton-comfort a {
-    font-size: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .subbutton-moviefreak {
-    padding: 5px;
-    margin-top: 40px;
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  .subbutton-moviefreak a {
-    font-size: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .ButtonAMarrow {
-    display: none;
-   }
-
-  .SEC1 .DYKT {
-    padding-left: 40px;
-  }
-
-  .SEC1 .DYKP {
-    margin-left: 40px;
-    word-break: break-all;
-    width: 470px;
-    font-size: 20px;
-  }
-
-  .SEC1 .DYKB {
-    margin-left: 40px;
-    font-size: 18px;
-    margin-top: 230px;
-  }
-
-  .SEC1 img {
-    margin-right: 40px;
-  }
-
-  .SEC2 img {
-    margin-left: 40px;
-  }
-
-}
-
-
 
 @media (max-width: 1000px) {
 
@@ -1605,28 +1616,11 @@ a {
   }
 }
 
-@media (max-width: 750px) {
-  .main-title h1{
-    font-size: 45px;
-    bottom: 20px;
-  }
-  .main-title .Welcome {
-    bottom: 80px;
-    font-size: 20px;
-  }
-  .main-title p {
-    bottom: 0px;
-    left: 60px;
-  }
-}
-
 @media (max-width: 900px) {
 
   .frontbutton {
     display: none;
   }
-  
-
   
   .SubSec {
     margin-top: 40px;
@@ -1774,7 +1768,19 @@ a {
 }
 
 @media (max-width: 750px) {
-
+  .main-title h1{
+    font-size: 45px;
+    bottom: 20px;
+  }
+  .main-title .Welcome {
+    bottom: 80px;
+    font-size: 20px;
+  }
+  .main-title p {
+    bottom: 0px;
+    left: 60px;
+  }
+  
   .frontbutton {
     display: none;
   }
@@ -2028,47 +2034,73 @@ a {
   }
 }
 
-@media (max-width: 1200px) {
-  .all-movies {
-    margin-left: 40px;
-  }
-  .PM {
-    margin-left: 40px;
-  }
-  .TC {
-    margin-left: 40px;
-  }
-  .Categories {
-    margin-left: 40px;
-  }
+.navbuttons-AM {
+  display: none;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 10px;
+  position: absolute;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.navbuttons-AM li {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.navbuttons-AM li a{
+  color: white;
+  text-decoration: none;
+  background: #737373;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.navbuttons-AM li .navgoback {
+  padding-left: 5px;
+  padding-right: 2px;
+  margin-right: 10px;
+}
+
+.navbuttons-AM li .navgoback input {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbuttons-AM .homepage-button {
+  background: #5B00B3;
 }
 
 .AM-M-FrontPoster{
-  height: 750px;
-  margin: 0px;
-  padding: 0px;
+  height: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: right;
 }
 
 .Hogwarts {
-  margin: 0;
-  padding: 0;
-  float:right;
-  position: relative;
-
+  width: 100%;
+  height: 600px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
   -webkit-mask-image: linear-gradient(black, black, transparent);
 }
 
 .Hogwarts img {
-  display: flex;
-  flex-wrap: nowrap;
-  height: 750px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 0px;
-  justify-content: right;
+  height: 600px;
+  display: block;
 }
 
 .AMMPosterText {
@@ -2076,22 +2108,29 @@ a {
   top: 125px;
   left: 0px;
   margin-left: 69px;
-  background-color:transparent;
   font-size: 20px;
   text-align: left;
 }
 
 .AMMPosterText h2 {
+  color: white;
   background-color: transparent;
-  margin-left: 0px;
-  margin-top: 0px;
   font-size: 55px;
   width: 1500px;
+  padding: 0px;
+  line-height: 10px;
+}
+
+.tatm {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-size: 25px;
 }
 
 .AMMTop {
   display: flex;
-  margin-top: 20px;
+  padding-bottom: 10px;
 }
 
 .AMMRating {
@@ -2112,7 +2151,7 @@ a {
 }
 
 .AMMPosterTags {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 .AMMTag1, .AMMTag2, .AMMTag3  {
@@ -2151,15 +2190,15 @@ a {
 .AMMPosterText p {
   background-color: transparent;
   margin-left: 0px;
-  margin-top: 0px;
+  margin-top: 25px;
   word-break: break-all;
   width: 675px;
-  padding-top: 25px;
   font-size: 20px;
 }
 
 .PlayButton {
-  margin-top: 185px;
+  margin-top: 100px;
+  margin-bottom: 0px;
 }
 
 .PlayButton a {
@@ -2186,9 +2225,8 @@ a {
   opacity: 100%;
 }
 
-
 .AM-M-Content {
-  display: inline-block;
+  padding-top: 50px;
 }
 
 .AM-M-Title-Content, .AM-ButtonBack {
@@ -2197,29 +2235,36 @@ a {
   justify-content: space-between;
   align-items: center;
   justify-self: center;
+  margin-left: 69px;
 }
 
 .AM-M-h {
   display: block;
   margin-top: 0px;
   padding: 0px;
-  font-size: 40px;
+  color: white;
+  font-size: 55px;
 }
 
 .AM-ButtonBack {
   float: right;
   margin-right: 69px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .AMGoBackButton {
-  background-color: #0A0A0C;
-  box-shadow: none;
-  border: none;
+  text-decoration: none;
+  list-style-type: none;
   color: white;
-  padding: 10px 20px 10px 20px;
-  border-radius: 50px;
-  opacity: 50%;
-  font-size: 16px;
+  float: right;
+  border: 2px solid #5B00B3;
+  border-radius: 10%;
+  padding: 2.5px 5px 2.5px 5px;
+  margin-top: 10px;
+  text-align: center;
+  flex-wrap: nowrap;
 }
 
 .AMGoBack input{
@@ -2231,94 +2276,382 @@ a {
 }
 
 .AMGoBackButton:hover {
-  opacity: 100%;
+  background: #5B00B3;
 }
 
-.AM-Posters-Sec1, .AM-Posters-Sec2, .AM-Posters-Sec3 {
-  background-color:transparent;
-  display: inline-flex;
+.AM-Posters-Sec{
+  width: 100%;
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  text-align: center;
   margin-left: 69px;
-  margin-top: 40px;
+  margin-right: 30px;
+  margin-top: 20px;
+  flex-flow: row wrap;
 }
 
-.AMPoster1, .AMPoster2, .AMPoster3, .AMPoster4, .AMPoster5, .AMPoster6 {
+.AMPoster{
   background-color: #0A0A0C;
-  width: 190px;
-  display: inline-block;
-  height: 375px;
-  margin: 0px 76px 40px 0px;
+  max-width: 190px;
+  min-height: 300px;
+  margin-left: 0px;
+  color: white;
+  cursor: pointer;
+}
+
+.AMPoster img {
+  max-width: 190px;
 }
 
 .PosterTitle {
   color: white;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  width: 190px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  font-size: 20px;
+  padding: 5px;
 }
 
-.AM-poster-tags {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
+.AM-Poster-tags {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
-.AM-poster-tags a {
+.AM-Poster-tags a {
   color: white;
   text-decoration: none;
   margin-right: 5px;
   margin-left: 5px;
-  opacity: 65%;
+  opacity: 60%;
 }
 
-.AM-poster-tags a:hover {
+.AMPoster a:hover {
+  color: #CCA4FF;
+}
+
+.AM-Poster-tags a:hover {
   color: #CCA4FF;
   margin-right: 5px;
   margin-left: 5px;
   opacity: 100%;
 }
 
-.woods {
-  float: right;
-  margin-right: 0;
-  padding: 0;
-  position: relative;
+@media (max-width: 1200px) {
+  .navbuttons-AM {
+    display: inline;
+  }
 
+  .AM-M-Title-Content {
+    margin-top: 0px;
+    margin-left: 40px;
+  }
+
+  .AM-Posters-Sec {
+    margin-left: 40px;
+  }
+  
+  .AM-ButtonBack {
+    display: none;
+  }
+
+  .AM-M-FrontPoster{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 400px;
+  }
+
+  .tatm {
+    font-size: 20px;
+  }
+  
+  .Hogwarts {
+  height: 400px;
+ }
+
+ .Hogwarts img {
+  height: 400px;
+ }
+
+ .AMMPosterText {
+  top: 170px;
+  margin-left: 40px;
+ }
+
+ .AMMPosterText h2 {
+  font-size: 40px;
+ }
+
+ .PlayButton {
+  margin-top: 50px;
+ }
+
+ .PlayButton a {
+  font-size: 22px;
+ }
+}
+
+@media (max-width: 990px) {
+  
+  .tatm {
+    font-size: 18px;
+  }
+
+ .AMMPosterText {
+  top: 170px;
+  margin-left: 40px;
+ }
+
+ .AMMPosterText h2 {
+  font-size: 35px;
+ }
+
+ .PlayButton {
+  margin-top: 30px;
+ }
+
+ .PlayButton a {
+  font-size: 20px;
+ }
+  .AM-M-h {
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+
+  .AMPoster{
+    max-width: 175px;
+  }
+  .AMPoster img {
+    max-width: 175px;
+  }
+
+}
+
+@media (max-width: 750px) {
+  .navbuttons-AM {
+    margin-top: 50px;
+  }
+
+  .tatm {
+    font-size: 18px;
+  }
+
+  .AM-M-FrontPoster{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 350px;
+  }
+
+  .AMMPosterText {
+  top: 170px;
+  margin-left: 40px;
+  }
+
+  .AMMPosterText h2 {
+  font-size: 27px;
+  }
+
+  .AMMPosterText p {
+  font-size: 18px;
+  width: 605px;
+  }
+
+  .PlayButton a {
+  font-size: 17px;
+  }
+
+ .AM-M-h {
+  font-size: 40px;
+  margin-bottom: 0px;
+  }
+
+  .AMPoster{
+    max-width: 165px;
+  }
+  .AMPoster img {
+    max-width: 165px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .tatm {
+    font-size: 18px;
+  }
+
+  .AM-M-FrontPoster{
+    margin-top: 100px;
+    margin-bottom: 0px;
+    height: 440px;
+  }
+
+  .AM-M-FrontPoster img {
+    height: 500px;
+  }
+
+  .AMMPosterText {
+  top: 170px;
+  margin-left: 40px;
+  }
+
+  .AMMPosterText h2 {
+  font-size: 27px;
+  width: 500px;
+  line-height: 30px;
+  }
+
+  .AMMTop {
+    margin-top: 0px;
+  }
+
+  .AMMRating span {
+    font-size: 12px;
+  }
+
+  .AMMCat {
+    font-size: 12px;
+    margin-top: 2.5px;
+  }
+
+  .AMMPosterText p {
+  font-size: 18px;
+  width: 499px;
+  }
+
+  .PlayButton a {
+  font-size: 17px;
+  }
+
+ .AM-M-h {
+  font-size: 40px;
+  margin-bottom: 0px;
+  }
+  
+  .AMPoster{
+    max-width: 160px;
+    margin-right: 30px;
+  }
+  
+  .AMPoster img {
+    max-width: 160px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .AMMPosterText h2 {
+    font-size: 27px;
+    width: 450px;
+    line-height: 30px;
+    }
+
+  .AMMPosterText p {
+    font-size: 16px;
+    width: 375px;
+    }
+
+    .AM-M-FrontPoster{
+      margin-top: 100px;
+      margin-bottom: 0px;
+      height: 390px;
+    }
+
+    .AMMPosterTags a{
+      font-size: 14px;
+    }
+}
+
+
+.navbuttons-CM {
+  display: none;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 10px;
+  position: absolute;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.navbuttons-CM li {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.navbuttons-CM li a{
+  color: white;
+  text-decoration: none;
+  background: #737373;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.navbuttons-CM li .navgoback {
+  padding-left: 5px;
+  padding-right: 2px;
+  margin-right: 10px;
+}
+
+.navbuttons-CM li .navgoback input {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbuttons-CM .homepage-button {
+  background: #5B00B3;
+}
+
+.C-M-FrontPoster {
+  height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right; 
+}
+
+.woods {
+  width: 100%;
+  height: 600px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
   -webkit-mask-image: linear-gradient(black, black, transparent);
 }
 
 .woods img {
+  height: 700px;
   display: block;
 }
 
 .CMPosterText {
   position: absolute;
   top: 125px;
+  left: 0px;
   margin-left: 69px;
-  background-color:transparent;
   font-size: 20px;
   text-align: left;
 }
 
 .CMPosterText h2 {
+  color: white;
   background-color: transparent;
-  margin-left: 0px;
-  margin-top: 0px;
   font-size: 55px;
   width: 1500px;
+  padding: 0px;
+  line-height: 10px;
 }
 
 .CMTop {
   display: flex;
-  margin-top: 20px;
+  padding-bottom: 10px;
 }
 
 .CMRating {
@@ -2385,37 +2718,45 @@ a {
   font-size: 20px;
 }
 
-.CM-Title-Content {
-  display: inline-flex;
+.CM-Title-Content, .CM-ButtonBack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
   margin-left: 69px;
-  margin-right: 69px;
 }
 
 .CM-h {
-  display: inline-block;
-  margin: 0px;
+  display: block;
+  margin-top: 0px;
   padding: 0px;
-  font-size: 40px;
+  color: white;
+  font-size: 55px;
 }
 
 .CM-ButtonBack {
-  background-color: #0A0A0C;
-  box-shadow: none;
-  border: none;
-  color: white;
-  padding: 10px 20px 10px 20px;
-  border-radius: 50px;
-  opacity: 50%;
-  font-size: 16px;
   float: right;
-}
-
-.CMGoBack {
+  margin-right: 69px;
+  margin-bottom: 45px;
   display: flex;
-  justify-content: center;
+  flex-wrap: nowrap;
 }
 
-.CMGoBackButton input {
+.CMGoBackButton {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  float: right;
+  border: 2px solid #5B00B3;
+  border-radius: 10%;
+  padding: 2.5px 5px 2.5px 5px;
+  margin-top: 10px;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
+.CMGoBack input{
   background-color: transparent;
   box-shadow: none;
   border: none;
@@ -2423,47 +2764,67 @@ a {
   font-size: 16px;
 }
 
-.CM-ButtonBack:hover {
-  opacity: 100%;
+.CMGoBackButton:hover {
+  background: #5B00B3;
 }
 
-.CM-Posters-Sec1, .CM-Posters-Sec2 {
-  margin-left: 69px;
-  display: inline-block;
-}
 
-.CMPosterCat1, .CMPosterCat2, .CMPosterCat3, .CMPosterCat4, .CMPosterCat5 {
+.CM-Posters-Sec{
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   position: relative;
+  text-align: center;
+  margin-top: 20px;
+  flex-flow: row wrap;
+}
+
+.CMPosterCat a {
+  width: 100%;
+  text-decoration: none;
   color: white;
-  display: inline-block;
-  margin: 50px 70px 40px 0px;
-  background-color: black;
+  background: black;
+  height: 380.08px;
 }
 
-.CMPosterCat1 img, .CMPosterCat2 img, .CMPosterCat3 img, .CMPosterCat4 img, .CMPosterCat5 img {
-  -webkit-mask-image: linear-gradient(black, black, black, black);
-  opacity: 20%;
+.CMPosterCat img {
+  max-width: 246.85px;
+  min-height: 380.08px;
 }
 
-.CMCat {
+.CMPosterCatTag {
   position: absolute;
   top: 50%;
-  left: 125px;
+  left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
   font-weight: bold;
   color: white;
 }
 
-.CMCat:hover {
-  position: absolute;
-  top: 50%;
-  left: 125px;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  font-weight: bold;
-  color:#CCA4FF;
-} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .trailer {
   float: right;

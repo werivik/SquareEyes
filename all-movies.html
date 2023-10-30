@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="all movies" content="width=device-width, initial-scale=1.0">
 
-  <title>Square Eyes</title>
+  <title>All Movies</title>
 
  <link rel="stylesheet" type="text/css" href="CSS/style.css">
 
@@ -18,6 +18,7 @@
 </head>
 
 <body>
+
   <header class="header">
     <a href="index.html" class="logo">
       <img src="images/squareeyesheaderlogo.png" alt="index">
@@ -35,7 +36,7 @@
           <a href="index.html" >Home</a>
         </li>
           <li>
-            <a href="all-movies.html" class="active">Movies</a>
+            <a href="all-movies.html" class="active" >Movies</a>
           </li>
           <li>
             <a href="categories.html" >Categories</a>
@@ -49,6 +50,14 @@
           <li class="searchbar">
             <input type="search" name="box" placeholder="Search...">
           </li>
+          <div class="shopping-profile">
+            <div class="shopping-cart">
+              <a href="cart.html"><i class="fa-solid fa-basket-shopping" style="color: #ffffff;"></i></a>
+            </div>
+            <div class="profile">
+              <a href=""><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+            </div>
+          </div>
       </ul>
     </nav>
 
@@ -130,13 +139,25 @@
 
 <main class="AM-M">
 
+  <ul class="navbuttons-AM">
+    <li>
+      <a href="" class="navgoback">
+        <i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+        <input type="Button" value="Go Back" onclick="history.back(-1)">
+      </a>
+      <a href="index.html">Home</a>
+      <a href="all-movies.html" class="homepage-button">Movies</a>
+      <a href="categories.html" >Categories</a>
+    </li>    
+  </ul>
 
-  <div class="AM-M-FrontPoster" style="width: 100%;">
+  <div class="AM-M-FrontPoster">
     <figure class="Hogwarts">
-      <img src="images/castle2.png" alt="">
+      <img src="images/castle3.png" alt="">
     </figure>
     <div class="AMMPosterText">
-      <h2>Harry Potter and the Philosopher's Stone</h2>
+      <div class="tatm">Trending at the moment:</div>
+      <h2>Harry Potter and The Philosopher's Stone</h2>
       <div class="AMMTop">
         <div class="AMMRating">
           <span class="fa fa-star checked"></span>
@@ -164,17 +185,7 @@
       </div>
     </div>
 
-
 <div class="AM-M-Content">
-
-  <ul class="navbuttons">
-    <li>
-      <a href="index.html">Home</a>
-      <a href="all-movies.html" class="homepage-button">Movies</a>
-      <a href="categories.html" >Categories</a>
-    </li>    
-  </ul>
-
 
   <div class="AM-M-Title-Content">
     <h1 class="AM-M-h">All Movies</h1>
@@ -187,213 +198,435 @@
       </form>
     </div>
   </div>
-
-
-  <div class="AM-Posters-Sec1">
-    <figure class="AMPoster1">
-      <a href="all-movies.html">
-        <img src="images/posters/Twilight.jpg" alt="" width="190px" height="275px">
+  
+  <div class="AM-Posters-Sec">
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Twilight.jpg" alt="">
       </a>
       <figcaption class="PosterTitle">Twilight</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Romance</a>
-        <a href="">Fantasy</a>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Romance</a>
+        <a href="categories.html">Fantasy</a>
       </div>
     </figure>
-
-    <figure class="AMPoster2">
-      <a href="all-movies.html">
-        <img src="images/posters/Godzilla.png" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">Godzilla - King of the Monsters</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Action</a>
-        <a href="">Science-Fiction</a>
-      </div>
-    </figure>
-
-    <figure class="AMPoster3">
-      <a href="all-movies.html">
-        <img src="images/posters/Toy Story.png" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">Toy Story 4</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Adventure</a>
-        <a href="">Family</a>
-      </div>
-    </figure>
-
-    <figure class="AMPoster4">
-      <a href="all-movies.html">
-        <img src="images/posters/The Hobbit.jpg" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">The Hobbit - The Desolation of Smaug</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Adventure</a>
-        <a href="">Fantasy</a>
-      </div>
-    </figure>
-
-    <figure class="AMPoster5">
+    <figure class="AMPoster">
       <a href="moviepage.html">
-        <img src="images/posters/What We Do in the shadows.jpg" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">What We Do in the Shadows</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Horror</a>
-        <a href="">Comedy</a>
-      </div>
-    </figure>
-
-    <figure class="AMPoster6">
-      <a href="all-movies.html">
-        <img src="images/posters/Batman.png" alt="" width="190px" height="275px">
+        <img src="images/VSBilder/Batman.png" alt="">
       </a>
       <figcaption class="PosterTitle">Batman</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Drama</a>
-        <a href="">Action</a>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Drama</a>
+        <a href="categories.html">Action</a>
       </div>
     </figure>
-  </div>
-  
-  <div class="AM-Posters-Sec2">
-    <figure class="AMPoster1">
-      <a href="all-movies.html">
-        <img src="images/posters/Hollywood.png" alt="" width="190px" height="275px">
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/GftG.png" alt="">
       </a>
-      <figcaption class="PosterTitle">Once Upon a Time in Hollywood</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Comedy</a>
-        <a href="">Drama</a>
+      <figcaption class="PosterTitle">Guardians of the Galaxy</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Comedy</a>
+        <a href="categories.html">Action</a>
       </div>
     </figure>
-
-    <figure class="AMPoster2">
-      <a href="all-movies.html">
-        <img src="images/posters/Sweetheart.png" alt="" width="190px" height="275px">
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Godzilla.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Godzilla</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Science-Fiction</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Hobbs&Shaw.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Hobbs & Shaw</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Buddy-Cop</a>
+        <a href="categories.html">Adventure</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Hollywood.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Once Upon a Time In Hollywood</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Drama</a>
+        <a href="categories.html">Comedy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/HP.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Harry Potter and The Philosopher's Stone</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Adventure</a>
+        <a href="categories.html">Fantasy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Scream.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Scream</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Horror</a>
+        <a href="categories.html">Thriller</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/StarWars.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Star Wars: Episode VIII - The Last Jedi</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Science-Fiction</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Sweetheart.png" alt="">
       </a>
       <figcaption class="PosterTitle">Sweetheart</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Horror</a>
-        <a href="">Science-Fiction</a>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Horror</a>
+        <a href="categories.html">Science-Fiction</a>
       </div>
     </figure>
-
-    <figure class="AMPoster3">
-      <a href="all-movies.html">
-        <img src="images/posters/Twilight.jpg" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">Twilight</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Romance</a>
-        <a href="">Fantasy</a>
-      </div>
-    </figure>
-
-    <figure class="AMPoster4">
-      <a href="all-movies.html">
-        <img src="images/posters/Toy Story.png" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">Toy Story 4</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Adventure</a>
-        <a href="">Family</a>
-      </div>
-    </figure>
-
-    <figure class="AMPoster5">
-      <a href="all-movies.html">
-        <img src="images/posters/The Hobbit.jpg" alt="" width="190px" height="275px">
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/TheHobbit.jpg" alt="">
       </a>
       <figcaption class="PosterTitle">The Hobbit - The Desolation of Smaug</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Adventure</a>
-        <a href="">Fantasy</a>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Adventure</a>
+        <a href="categories.html">Fantasy</a>
       </div>
     </figure>
-
-    <figure class="AMPoster6">
-      <a href="all-movies.html">
-        <img src="images/posters/What We Do in the shadows.jpg" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">What We Do in the Shadows</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Horror</a>
-        <a href="">Comedy</a>
-      </div>
-    </figure>
-  </div>
-  
-  <div class="AM-Posters-Sec3">
-    <figure class="AMPoster1">
-      <a href="all-movies.html">
-        <img src="images/posters/Twilight.jpg" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">Twilight</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Romance</a>
-        <a href="">Fantasy</a>
-      </div>
-    </figure>
-
-    <figure class="AMPoster2">
-      <a href="all-movies.html">
-        <img src="images/posters/Godzilla.png" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">Godzilla - King of the Monsters</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Action</a>
-        <a href="">Science-Fiction</a>
-      </div>
-    </figure>
-
-    <figure class="AMPoster3">
-      <a href="all-movies.html">
-        <img src="images/posters/Toy Story.png" alt="" width="190px" height="275px">
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Toy Story.png" alt="">
       </a>
       <figcaption class="PosterTitle">Toy Story 4</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Adventure</a>
-        <a href="">Family</a>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Animation</a>
+        <a href="categories.html">Family</a>
       </div>
     </figure>
-
-    <figure class="AMPoster4">
-      <a href="all-movies.html">
-        <img src="images/posters/The Hobbit.jpg" alt="" width="190px" height="275px">
-      </a>
-      <figcaption class="PosterTitle">The Hobbit - The Desolation of Smaug</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Adventure</a>
-        <a href="">Fantasy</a>
-      </div>
-    </figure>
-
-    <figure class="AMPoster5">
-      <a href="all-movies.html">
-        <img src="images/posters/What We Do in the shadows.jpg" alt="" width="190px" height="275px">
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/WhatWeDointheshadows.jpg" alt="">
       </a>
       <figcaption class="PosterTitle">What We Do in the Shadows</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Horror</a>
-        <a href="">Comedy</a>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Horror</a>
+        <a href="categories.html">Comedy</a>
+        <a href="categories.html">Documentary</a>
       </div>
     </figure>
-
-    <figure class="AMPoster6">
-      <a href="all-movies.html">
-        <img src="images/posters/Batman.png" alt="" width="190px" height="275px">
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Addams.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">The Addams Family - Halloween</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Animation</a>
+        <a href="categories.html">Comedy</a>
+        <a href="categories.html">Family</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Twilight.jpg" alt="">
+      </a>
+      <figcaption class="PosterTitle">Twilight</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Romance</a>
+        <a href="categories.html">Fantasy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Batman.png" alt="">
       </a>
       <figcaption class="PosterTitle">Batman</figcaption>
-      <div class="AM-poster-tags">
-        <a href="">Drama</a>
-        <a href="">Action</a>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Drama</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/GftG.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Guardians of the Galaxy</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Comedy</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Godzilla.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Godzilla</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Science-Fiction</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Hobbs&Shaw.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Hobbs & Shaw</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Buddy-Cop</a>
+        <a href="categories.html">Adventure</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Hollywood.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Once Upon a Time In Hollywood</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Drama</a>
+        <a href="categories.html">Comedy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/HP.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Harry Potter and The Philosopher's Stone</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Adventure</a>
+        <a href="categories.html">Fantasy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Scream.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Scream</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Horror</a>
+        <a href="categories.html">Thriller</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/StarWars.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Star Wars: Episode VIII - The Last Jedi</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Science-Fiction</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Sweetheart.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Sweetheart</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Horror</a>
+        <a href="categories.html">Science-Fiction</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/TheHobbit.jpg" alt="">
+      </a>
+      <figcaption class="PosterTitle">The Hobbit - The Desolation of Smaug</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Adventure</a>
+        <a href="categories.html">Fantasy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Toy Story.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Toy Story 4</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Animation</a>
+        <a href="categories.html">Family</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/WhatWeDointheshadows.jpg" alt="">
+      </a>
+      <figcaption class="PosterTitle">What We Do in the Shadows</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Horror</a>
+        <a href="categories.html">Comedy</a>
+        <a href="categories.html">Documentary</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Addams.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">The Addams Family - Halloween</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Animation</a>
+        <a href="categories.html">Comedy</a>
+        <a href="categories.html">Family</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Twilight.jpg" alt="">
+      </a>
+      <figcaption class="PosterTitle">Twilight</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Romance</a>
+        <a href="categories.html">Fantasy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Batman.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Batman</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Drama</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/GftG.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Guardians of the Galaxy</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Comedy</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Godzilla.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Godzilla</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Science-Fiction</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Hobbs&Shaw.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Hobbs & Shaw</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Buddy-Cop</a>
+        <a href="categories.html">Adventure</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Hollywood.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Once Upon a Time In Hollywood</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Drama</a>
+        <a href="categories.html">Comedy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/HP.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Harry Potter and The Philosopher's Stone</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Adventure</a>
+        <a href="categories.html">Fantasy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Scream.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Scream</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Horror</a>
+        <a href="categories.html">Thriller</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/StarWars.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Star Wars: Episode VIII - The Last Jedi</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Science-Fiction</a>
+        <a href="categories.html">Action</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Sweetheart.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Sweetheart</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Horror</a>
+        <a href="categories.html">Science-Fiction</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/TheHobbit.jpg" alt="">
+      </a>
+      <figcaption class="PosterTitle">The Hobbit - The Desolation of Smaug</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Adventure</a>
+        <a href="categories.html">Fantasy</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Toy Story.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">Toy Story 4</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Animation</a>
+        <a href="categories.html">Family</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/WhatWeDointheshadows.jpg" alt="">
+      </a>
+      <figcaption class="PosterTitle">What We Do in the Shadows</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Horror</a>
+        <a href="categories.html">Comedy</a>
+        <a href="categories.html">Documentary</a>
+      </div>
+    </figure>
+    <figure class="AMPoster">
+      <a href="moviepage.html">
+        <img src="images/VSBilder/Addams.png" alt="">
+      </a>
+      <figcaption class="PosterTitle">The Addams Family - Halloween</figcaption>
+      <div class="AM-Poster-tags">
+        <a href="categories.html">Animation</a>
+        <a href="categories.html">Comedy</a>
+        <a href="categories.html">Family</a>
       </div>
     </figure>
   </div>
-
-
 
 </main>
 
