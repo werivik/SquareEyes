@@ -2974,6 +2974,61 @@ a {
 
 }
 
+
+
+
+.navbuttons-MP {
+  display: none;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 10px;
+  position: absolute;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.navbuttons-MP li {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.navbuttons-MP li a{
+  color: white;
+  text-decoration: none;
+  background: #737373;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 50px;
+  margin-right: 5px;
+}
+
+.navbuttons-MP li .navgoback {
+  padding-left: 5px;
+  padding-right: 2px;
+  margin-right: 10px;
+}
+
+.navbuttons-MP li .navgoback input {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbuttons-MP .homepage-button {
+  background: #5B00B3;
+}
+
+
+
+
+
 .trailer {
   width: 100%;
   margin: 0px;
@@ -3175,7 +3230,7 @@ a {
   opacity: 100%;
 }
 
-.trailers-yt {
+.trailer-Cast {
   background: #0A0C10;
   padding-top: 30px;
   padding-bottom: 40px;
@@ -3198,23 +3253,6 @@ a {
 }
 
 .trailer-clips h3{
-  font-size: 25px;
-  padding: 0px;
-  margin: 0px;
-  margin-bottom: 10px;
-}
-
-.trailer-director {
-  flex-direction: column;
-}
-
-.trailer-director iframe {
-  display: block;
-  width: 400px;
-  height: 250px;
-}
-
-.trailer-director h3{
   font-size: 25px;
   padding: 0px;
   margin: 0px;
@@ -3266,6 +3304,50 @@ a {
   color: #CCA4FF;
 }
 
+.morelikethis {
+  margin-top: 100px;
+}
+.morelikethis h2{
+  color: white;
+  font-size: 35px;
+  margin-left: 69px;
+}
+
+.morelikethis-movies {
+  display: inline-flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  width: 95%;
+  text-align: center;
+  margin-left: 69px;
+}
+
+.morelikethis-movies a {
+  color: white;
+  text-decoration: none;
+}
+
+.morelikethis-movies img {
+  height: 350px;
+}
+
+.morelikethis-movies figure {
+  background-color: #07080B;
+  margin-left: 0px;
+}
+
+.morelikethis-movies figcaption {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+
+.morelikethis-movies a:hover {
+  color: #CCA4FF;
+}
+
 @media (max-width: 1400px) {
   .MPPosterText p {
     padding-right: 250px;
@@ -3278,6 +3360,44 @@ a {
   }
 }
 
+@media (max-width: 1200px) {
+  .navbuttons-MP {
+    display: inline-block;
+    z-index: 888;
+    position: absolute;
+  }
+  .MPPosterText {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  .trailer-clips {
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+
+  .morelikethis {
+    margin-top: 50px;
+  }
+
+  .morelikethis h2 {
+    margin-left: 40px;
+  }
+
+  .morelikethis-movies {
+    margin-left: 40px;
+    width: 92%;
+  }
+
+  .morelikethis-movies img {
+    height: 250px;
+  }
+
+  .morelikethis-movies figcaption {
+    font-size: 18px;
+  }
+
+}
+
 @media (max-width: 1100px) {
   .MPPosterText p {
     padding-right: 150px;
@@ -3285,27 +3405,86 @@ a {
 }
 
 @media (max-width: 1000px) {
-  .MPPosterText p {
-    padding-right: 50px;
-  }
   .MPPosterText img {
     width: 200px;
   }
-  .MPCast a {
-    line-height: 10px;
-    margin-left: 0px;
-    font-size: 14px;
+  .MPPosterText h1 {
+    font-size: 40px;
+  }
+  .CartButton a {
+    font-size: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 
-  .SeeMoreButton a {
-    font-size: 13px;
+  .CartButton i {
+    margin-right: 2px;
+    font-size: 18px;
+  }
+
+  .buttonheart i {
+    font-size: 25px;
+    padding-right: 8px;
+  }
+
+  .trailer {
+    height: 700px;
+  }
+  .trailer-Cast {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .trailer-clips iframe {
+    width: 350px;
+    height: 240px;
+  }
+  .trailer-Cast h3{
+    font-size: 23px;
+  }
+  .Movie-Cast {
+    overflow-x: scroll;
+    width: 50%;
+  }
+  .Movie-Cast h3 {
+    font-size: 25px;
+  }
+  .casts {
+    gap: 25px;
+  }
+  .cast-pictures img {
+    height: 145px;
+  }
+  .casts h4 {
+    font-size: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .morelikethis h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  .morelikethis-movies {
+    width: 90%;
+  }
+
+  .morelikethis-movies img {
+    height: 210px;
+  }
+
+  .morelikethis-movies figcaption {
+    font-size: 16px;
   }
 }
 
 @media (max-width: 900px) {
+  .trailer {
+    height: 640px;
+  }
   .MPPosterText p {
-    padding-right: 10px;
     font-size: 19px;
+    padding-right: 15px;
   }
   .MPPosterText img {
     width: 150px;
@@ -3328,17 +3507,96 @@ a {
   }
 }
 
+@media (max-width: 750px) {
+  .trailer {
+    height: 600px;
+  }
+  .CartButton {
+    margin-top: 20px;
+  }
+  .CartButton a {
+    font-size: 20px;
+  }
 
+  .trailer-Cast {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .trailer-clips iframe {
+    height: 180px;
+  }
+  .trailer-clips h3 {
+    font-size: 20px;
+  }
+  .Movie-Cast {
+    margin-left: 40px;
+    width: 88%;
+  }
+  .Movie-Cast h3 {
+    font-size: 20px;
+  }
 
+  .morelikethis-movies {
+    width: 88%;
+  }
+}
 
+@media (max-width: 600px) {
+  .trailer {
+    height: 630px;
+  }
+}
 
+.Shopping-Cart-Items {
+  margin-left: 69px;
+}
+.Shopping-Cart-Items h1 {
+  color: white;
+  font-size: 40px;
+}
 
+.sc-items {
+  margin-top: 40px;
+}
 
+.sc-item-1 img {
+  width: 200px;
+}
+.sc-item-1 {
+  display: inline-flex;
+}
 
+.sc-items-text {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 30px;
+  opacity: 70%;
+  line-height: 17px;
+}
 
+.sc-items-text p {
+  max-width: 350px;
+  margin-top: 0px;
+}
 
+.sc-items-text h4 {
+  color: white;
+  line-height: 0px;
+  font-size: 18px;
+  margin-top: 10px;
+}
 
+.sc-price {
+  text-align: center;
+  margin-top: 130px;
+}
 
+.sc-price a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: pink;
+}
 
 
 .AU-Content {
