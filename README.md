@@ -1,2 +1,1 @@
-# Practise
-This is my Course Assinment. 
+# squareeyes.com
