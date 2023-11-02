@@ -3400,6 +3400,13 @@ a {
     font-size: 18px;
   }
 
+  .filmposter {
+    background-color: #07080B;
+    min-height: 250px;
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+
 }
 
 @media (max-width: 1100px) {
