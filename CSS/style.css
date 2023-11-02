@@ -3247,6 +3247,7 @@ a {
   display: block;
   width: 400px;
   height: 270px;
+  border: 0px;
 }
 
 .trailer-clips h3{
@@ -3309,6 +3310,7 @@ a {
   color: white;
   font-size: 35px;
   margin-left: 69px;
+  padding-bottom: 25px;
 }
 
 .morelikethis-movies {
@@ -3329,12 +3331,16 @@ a {
   height: 350px;
 }
 
-.morelikethis-movies figure {
+.filmposter {
   background-color: #07080B;
+  min-height: 450px;
   margin-left: 0px;
+  margin-right: 30px;
 }
 
-.morelikethis-movies figcaption {
+.morelikethis-movies span {
+  display: flex;
+  justify-content: center;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
@@ -3390,7 +3396,7 @@ a {
     height: 250px;
   }
 
-  .morelikethis-movies figcaption {
+  .morelikethis-movies span {
     font-size: 18px;
   }
 
@@ -3471,7 +3477,7 @@ a {
     height: 210px;
   }
 
-  .morelikethis-movies figcaption {
+  .morelikethis-movies span {
     font-size: 16px;
   }
 }
