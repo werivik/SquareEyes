@@ -184,6 +184,7 @@ a {
 .shopping-cart a i{
   font-size: 30px;
   margin-top: 80%;
+  color: white;
 }
 .profile {
   margin-left: 50px;
@@ -254,6 +255,7 @@ a {
 .navbar2 ul li .letsgo i {
   display: inline-block;
   margin: auto;
+  color: white;
 }
 
 .navbar2 ul li i{
@@ -299,6 +301,12 @@ a {
   font-size: 2rem;
   cursor: pointer;
   display: none;
+}
+.menu-icon i {
+  color: white;
+}
+.menu-icon2 i {
+  color: white;
 }
 
 .searchbar {
@@ -482,6 +490,10 @@ a {
 }
 .main-title i{
   margin-left: 15px;
+  color: white;
+}
+.main-title span {
+  color: #BC0000;
 }
 .main-title p{
   color: white;
@@ -891,6 +903,10 @@ a {
   flex-direction: column;
 }
 
+.SEC1 i {
+  color: white;
+}
+
 .SEC1 .DYKT {
   position: absolute;
   color: white;
@@ -943,6 +959,7 @@ a {
 
 .DYKB i {
   margin-left: 10px;
+  color: white;
 }
 
 .DYKB a:hover {
@@ -1015,6 +1032,7 @@ a {
 
 .DYKB2 i {
   margin-left: 30px;
+  color: white;
 }
 
 .DYKB2 a:hover {
@@ -1094,6 +1112,11 @@ a {
 
 .socialsmobile i {
   margin-left: 20px;
+  color: white;
+}
+
+.DYKmobileT2 i {
+  color: #ff006b;
 }
 
 .SubSec-title {
@@ -1116,6 +1139,9 @@ a {
 .SubSec-title p{
   margin-top: 0px;
   margin-bottom: 50px;
+}
+.SubSec-title span {
+  color: #ff006b;
 }
 
 .subplans {
@@ -1278,6 +1304,14 @@ a {
 
 .topbutton:active {
   opacity: 1;
+}
+
+.socialsmobile i {
+  color: white;
+}
+
+.SEC1 span {
+  font-weight: bold;
 }
 
 @media (max-width: 1300px) {  
@@ -2064,6 +2098,10 @@ a {
   margin-right: 10px;
 }
 
+.navbuttons-CM i {
+  color: white;
+}
+
 .navbuttons-AM li .navgoback input {
   background-color: transparent;
   box-shadow: none;
@@ -2145,6 +2183,10 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.AMMCat span {
+  color: #BC0000;
+}
+
 .AMMPosterTags {
   margin-top: 10px;
 }
@@ -2213,12 +2255,14 @@ a {
 .PlayButton i {
   opacity: 50%;
   margin-left: 10px;
+  color: white;
 }
 
 .PlayButton a:hover {
   background-color: #A10000;
   opacity: 100%;
 }
+
 
 .AM-M-Content {
   padding-top: 50px;
@@ -2260,6 +2304,10 @@ a {
   margin-top: 10px;
   text-align: center;
   flex-wrap: nowrap;
+}
+
+.AMGoBackButton i {
+  color: white;
 }
 
 .AMGoBack input{
@@ -2427,7 +2475,6 @@ a {
   .AMPoster img {
     max-width: 175px;
   }
-
 }
 
 @media (max-width: 750px) {
@@ -2575,6 +2622,14 @@ a {
   margin-top: 60px;
   margin-bottom: 0px;
   font-size: 16px;
+}
+
+.CMCatTag span {
+  color: #BC0000;
+}
+
+.CMGoBackButton i {
+  color: white;
 }
 
 .navbuttons-CM li {
@@ -3058,6 +3113,10 @@ a {
   padding-right: 20px;
 }
 
+.MPCatTag span { 
+  color: #BC0000;
+}
+
 .MPTop {
   display: flex;
   margin-top: 10px;
@@ -3154,6 +3213,7 @@ a {
 
 .CartButton i {
   margin-right: 10px;
+  color: white;
 }
 
 .CartButton a:hover {
@@ -3171,6 +3231,7 @@ a {
 
 .buttonheart i {
   margin-top: 10px;
+  color: #BC0000;
 }
 
 .buttonheart i:nth-child(2) {
@@ -3633,6 +3694,7 @@ a {
 .delete i {
   font-size: 25px;
   opacity: 60%;
+  color: white;
 }
 
 .sc-items-text h4 {
@@ -4550,6 +4612,7 @@ a {
   font-size: 40px;
   margin-right: 50px;
   margin-top: 10px;
+  color: white;
 }
 
 .navbuttons-AU {
@@ -4566,6 +4629,9 @@ a {
 .navbuttons-AU li {
   margin-left: 0px;
   margin-top: 0px;
+}
+.navbuttons-AU i {
+  color: white;
 }
 
 .navbuttons-AU li a{
@@ -4713,6 +4779,9 @@ a {
   margin-bottom: 0px;
   font-size: 16px;
 }
+.navbuttons-CU i {
+  color: white;
+}
 
 .navbuttons-CU li {
   margin-left: 0px;
@@ -4749,6 +4818,10 @@ a {
 
 .navbuttons-CU .homepage-button {
   background: #5B00B3;
+}
+
+.contact-methods i {
+  color: white;
 }
 
 @media (max-width: 1200px) {
