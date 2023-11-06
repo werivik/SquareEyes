@@ -200,6 +200,7 @@ span {
 .profile a i{
   font-size: 30px;
   margin-top: 100%;
+  color: white;
 }
 
 .navbar ul li a:hover {
@@ -809,6 +810,7 @@ span {
   font-size: 30px;
   font-weight: bold;
   color: white;
+  font-family: 'Oswald', sans-serif;
 }
 
 .CatTag:hover {
@@ -1155,7 +1157,7 @@ span {
   margin-bottom: 50px;
 }
 .SubSec-title span {
-  color: #ff006b;
+  color: #790000;
 }
 
 .subplans {
@@ -1197,6 +1199,7 @@ span {
   color: #CCA4FF;
   font-size: 30px;
   margin-left: 10px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .subbutton-free {
@@ -1241,6 +1244,7 @@ span {
 }
 .subbutton-comfort a{
   text-decoration: none;
+  text-align: center;
   color: white;
   background-color: #0B0E12;
   padding: 15px;
@@ -1265,6 +1269,7 @@ span {
   padding-right: 0px;
 }
 .subbutton-moviefreak a{
+  text-align: center;
   text-decoration: none;
   color: white;
   background-color: #0B0E12;
@@ -1542,6 +1547,7 @@ span {
   .Categories {
     margin-left: 40px;
   }
+
 }
 
 @media (max-width: 1000px) {
@@ -1828,8 +1834,6 @@ span {
   .frontbutton {
     display: none;
   }
-  
-
   .SECmobile {
     position: relative;
     display: block;
@@ -4640,6 +4644,7 @@ span {
   margin-right: 50px;
   margin-top: 10px;
   color: white;
+  margin-bottom: 60px;
 }
 
 .navbuttons-AU {
@@ -4784,6 +4789,7 @@ span {
   margin-top: 50px;
   display: inline-flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .contact-methods p {
@@ -4850,6 +4856,7 @@ span {
 .contact-methods i {
   color: white;
 }
+
 
 @media (max-width: 1200px) {
 
