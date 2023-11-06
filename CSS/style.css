@@ -592,7 +592,10 @@ a {
   min-height: 475px;
   max-height: 600px;
   overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
 
 .Movie {
   background-color: #0A0A0C;
@@ -760,6 +763,8 @@ a {
   flex-wrap: nowrap;
   overflow-x: scroll;
   width: 92%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }  
 
 .Categories::-webkit-scrollbar {
@@ -852,6 +857,8 @@ a {
   overflow-x: scroll;
   overflow-y: hidden;
   margin-bottom: 150px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .SMovie {
@@ -3321,6 +3328,8 @@ a {
 .Movie-Cast {
   overflow-x: scroll;
   width: 62%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .Movie-Cast h3 {
@@ -3381,6 +3390,8 @@ a {
   width: 95%;
   text-align: center;
   margin-left: 69px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .morelikethis-movies a {
@@ -3657,6 +3668,8 @@ a {
   overflow-y: scroll;
   height: 50%;
   padding: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .sc-divider {
